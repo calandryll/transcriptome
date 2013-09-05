@@ -1,0 +1,11 @@
+transcriptome/
+	fastq/			# location of fastq files
+		original/	# Original data files
+		trimmed/	# Trimmed of Barcode/Ligation Adaptors
+		trimmed_qc/	# Removal of bp of Phred score <20
+	images/			# images created by R
+	notes/			# Notes for each day of analysis
+	programs/		# any programs not installed by apt-get
+	scripts/		# scripts for data analysis
+	stats/			# any stats info
+	
