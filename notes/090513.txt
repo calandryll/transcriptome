@@ -1,0 +1,2 @@
+Sequence_count.txt
+	Number of sequences per fastq file and check that quality and sequences lines are equal, as determined by using seq_count.sh
