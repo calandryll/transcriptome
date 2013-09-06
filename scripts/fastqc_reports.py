@@ -32,16 +32,18 @@ fastq_tfiles = glob.glob1(fastq_trimmed, "*.fastq")
 
 raw = len(list(fastq_rfiles))
 for files in range(raw):
-        print fastq_rfiles[files]
-
-		fastqc_rrun = fastq_raw + fastq_rfiles[files]
-        # Run fastqc
-        os.system("fastqc -o %s %s" % (fastq_routput, fastqc_rrun))
+	print fastq_rfiles[files]
+	
+	fastqc_rrun = fastq_raw + fastq_rfiles[files]
+	
+	# Run fastqc
+	os.system("fastqc -o %s %s" % (fastq_routput, fastqc_rrun))
 
 trim = len(list(fastq_tfiles))
 for files in range(trim):
-        print fastq_tfiles[files]
+	print fastq_tfiles[files]
 
-        fastqc_trun = fastq_trimmed + fastq_tfiles[files]
-        # Run fastqc
-        os.system("fastqc -o %s %s" % (fastq_toutput, fastqc_trun))
+	fastqc_trun = fastq_trimmed + fastq_tfiles[files]
+	
+	# Run fastqc
+	os.system("fastqc -o %s %s" % (fastq_toutput, fastqc_trun))
