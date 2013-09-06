@@ -12,3 +12,7 @@ Adaptors
 	Sample 6 - Adapter Index 12: GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG
 	Sample 7 - Adapter Index 1: GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG
 	Sample 8 - Adapter Index 3: GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG
+
+Trimmed Data
+	Removed previous incarnation of data, along with reports (just trimmed)
+	Trimmed indicates both quality trimmed and adapter trimmed

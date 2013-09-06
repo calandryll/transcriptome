@@ -1,0 +1,95 @@
+cutadapt version 1.2.1
+Command line parameters: -m 20 -q 20 -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -o /home/chris/transcriptome/fastq/trimmed//Sample_1_L001_trimmed.fastq /home/chris/transcriptome/fastq/original//Sample_1_L001.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 1
+   Processed reads:        91270
+   Processed bases:      4654770 bp (4.7 Mbp)
+     Trimmed reads:         9058 (9.9%)
+   Quality-trimmed:        10911 bp (0.1 Mbp) (0.23% of total)
+     Trimmed bases:       149086 bp (0.1 Mbp) (3.20% of total)
+   Too short reads:         1242 (1.4% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:      2.72 s
+     Time per read:      0.03 ms
+
+=== Adapter 1 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 9058 times.
+2696 times, it overlapped the 5' end of a read
+6362 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+3	621	1426.1	0
+4	1097	356.5	0
+5	257	89.1	0
+6	26	22.3	0
+7	17	5.6	0
+8	4	1.4	0
+9	22	0.3	0
+10	30	0.1	1
+11	10	0.0	1
+12	1	0.0	1
+14	1	0.0	1
+26	1	0.0	2
+27	1	0.0	2
+29	1	0.0	2
+41	1	0.0	4
+49	2	0.0	4
+50	7	0.0	5
+51	597	0.0	5
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+3	1195	1426.1	0
+4	414	356.5	0
+5	234	89.1	0
+6	272	22.3	0
+7	147	5.6	0
+8	208	1.4	0
+9	143	0.3	0
+10	107	0.1	1
+11	213	0.0	1
+12	140	0.0	1
+13	96	0.0	1
+14	129	0.0	1
+15	95	0.0	1
+16	49	0.0	1
+17	57	0.0	1
+18	63	0.0	1
+19	66	0.0	1
+20	34	0.0	2
+21	12	0.0	2
+22	27	0.0	2
+23	23	0.0	2
+24	27	0.0	2
+25	31	0.0	2
+26	133	0.0	2
+27	408	0.0	2
+28	1087	0.0	2
+29	311	0.0	2
+30	46	0.0	3
+31	13	0.0	3
+32	52	0.0	3
+33	14	0.0	3
+34	84	0.0	3
+35	11	0.0	3
+36	52	0.0	3
+37	21	0.0	3
+38	25	0.0	3
+39	12	0.0	3
+40	9	0.0	4
+41	4	0.0	4
+42	1	0.0	4
+43	3	0.0	4
+45	27	0.0	4
+46	5	0.0	4
+47	1	0.0	4
+48	2	0.0	4
+49	2	0.0	4
+50	257	0.0	5
+
