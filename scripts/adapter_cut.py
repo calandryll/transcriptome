@@ -25,4 +25,34 @@ index_3 = "GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG"	# Sa
 fastq_indir = "/home/chris/transcriptome/fastq/original/"
 fastq_outdir = "/home/chris/transcriptome/fastq/trimmed/"
 
-os.system("cutadapt -b %s -o %s/Sample_1_L001_trimmed.fastq %s/Sample_1_L001.fastq > %s/Sample_1_L001_trimmed.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
+# Sample 1
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_1_L001_trimmed.fastq %s/Sample_1_L001.fastq > %s/Sample_1_L001_trimmed.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_1_L002_trimmed.fastq %s/Sample_1_L002.fastq > %s/Sample_1_L002_trimmed.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 2
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_2_L001_trimmed.fastq %s/Sample_2_L001.fastq > %s/Sample_2_L001_trimmed.log" % (index_4, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_2_L002_trimmed.fastq %s/Sample_2_L002.fastq > %s/Sample_2_L002_trimmed.log" % (index_4, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 3
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_3_L001_trimmed.fastq %s/Sample_3_L001.fastq > %s/Sample_3_L001_trimmed.log" % (index_5, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_3_L002_trimmed.fastq %s/Sample_3_L002.fastq > %s/Sample_3_L002_trimmed.log" % (index_5, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 4
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_4_L001_trimmed.fastq %s/Sample_4_L001.fastq > %s/Sample_4_L001_trimmed.log" % (index_6, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_4_L002_trimmed.fastq %s/Sample_4_L002.fastq > %s/Sample_4_L002_trimmed.log" % (index_6, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 5
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_5_L001_trimmed.fastq %s/Sample_5_L001.fastq > %s/Sample_5_L001_trimmed.log" % (index_7, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_5_L002_trimmed.fastq %s/Sample_5_L002.fastq > %s/Sample_5_L002_trimmed.log" % (index_7, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 6
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_6_L001_trimmed.fastq %s/Sample_6_L001.fastq > %s/Sample_6_L001_trimmed.log" % (index_12, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_6_L002_trimmed.fastq %s/Sample_6_L002.fastq > %s/Sample_6_L002_trimmed.log" % (index_12, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 7
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_7_L001_trimmed.fastq %s/Sample_7_L001.fastq > %s/Sample_7_L001_trimmed.log" % (index_1, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_7_L002_trimmed.fastq %s/Sample_7_L002.fastq > %s/Sample_7_L002_trimmed.log" % (index_1, fastq_outdir, fastq_indir, fastq_outdir))
+
+# Sample 8
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_8_L001_trimmed.fastq %s/Sample_8_L001.fastq > %s/Sample_8_L001_trimmed.log" % (index_3, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("cutadapt -m 20 -q 20 -b %s -o %s/Sample_8_L002_trimmed.fastq %s/Sample_8_L002.fastq > %s/Sample_8_L002_trimmed.log" % (index_3, fastq_outdir, fastq_indir, fastq_outdir))
