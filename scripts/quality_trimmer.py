@@ -2,7 +2,7 @@
 # Can't do this with bash why not python!
 # Removes basepairs below a certain threshold, based on Phred score
 # Uses cutadapt to remove basepairs that are low quality and remove sequences that are less that 20 bp
-
+# Website: https://code.google.com/p/cutadapt/
 
 # Import OS features to run external programs
 import os

@@ -5,7 +5,7 @@
 import os
 import glob
 
-#v = "Version 0.3"
+v = "Version 0.3"
 # Versions:
 #       0.1 - Read in files for directory
 #       0.2 - 

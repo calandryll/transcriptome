@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Sample_8_L002.fastq_30.fastq
+PASS	Per base sequence quality	Sample_8_L002.fastq_30.fastq
+PASS	Per sequence quality scores	Sample_8_L002.fastq_30.fastq
+FAIL	Per base sequence content	Sample_8_L002.fastq_30.fastq
+FAIL	Per base GC content	Sample_8_L002.fastq_30.fastq
+PASS	Per sequence GC content	Sample_8_L002.fastq_30.fastq
+PASS	Per base N content	Sample_8_L002.fastq_30.fastq
+WARN	Sequence Length Distribution	Sample_8_L002.fastq_30.fastq
+FAIL	Sequence Duplication Levels	Sample_8_L002.fastq_30.fastq
+WARN	Overrepresented sequences	Sample_8_L002.fastq_30.fastq
+WARN	Kmer Content	Sample_8_L002.fastq_30.fastq

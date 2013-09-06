@@ -1,0 +1,4 @@
+Fastqc
+	used fastqc_reports.py to examine both raw and trimmed files in regards to quality of bases and sequences
+	Each sample will get their own directory for both raw and trim with the results
+
