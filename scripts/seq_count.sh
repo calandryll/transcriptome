@@ -1,6 +1,6 @@
 #!/bin/bash
 # Count the number of sequences in each fastq file
-# Grep from RNA Abundance Analysi (pg 210)
+# Grep from RNA Abundance Analysis (pg 210)
 
 FASTQ_DIR=~/transcriptome/fastq/
 

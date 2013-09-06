@@ -1,2 +1,12 @@
+Sequences
+	Renamed from [Sample #]_[Adapter]_[Lane #]_R1_001.fastq to [Sample #]_[Lane #].fastq
+
 Sequence_count.txt
 	Number of sequences per fastq file and check that quality and sequences lines are equal, as determined by using seq_count.sh
+
+Quality trimming
+	Carried out using cutadapt.
+	Examination of the first several sequences, does not show adapter sequences
+	If they are encoded as ascii(phred quality + 64), you currently have to add 31 to the cutoff. For example, if you actually mean "-q 10", you have to write "-q 41". (From cutadapt README)
+	A phred score of 20 and 30 will be used to examine differences
+	quality_trimmer.py will be used, log files of cutadapt output will be saved	
