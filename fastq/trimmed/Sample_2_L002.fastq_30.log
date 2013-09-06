@@ -1,0 +1,14 @@
+cutadapt version 1.2.1
+Command line parameters: -m 30 -q 30 -o /home/chris/transcriptome/fastq/trimmed/Sample_2_L002.fastq_30.fastq /home/chris/transcriptome/fastq/original/Sample_2_L002.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 0
+   Processed reads:     16252369
+   Processed bases:    828870819 bp (828.9 Mbp)
+     Trimmed reads:            0 (0.0%)
+   Quality-trimmed:     19755406 bp (0.0 Mbp) (2.38% of total)
+     Trimmed bases:            0 bp (0.0 Mbp) (0.00% of total)
+   Too short reads:       384601 (2.4% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:    226.99 s
+     Time per read:      0.01 ms
+
