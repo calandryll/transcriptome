@@ -1,8 +1,8 @@
 #!/usr/bin/python -tt
 # Can't do this with bash why not python!
-# Removes basepairs below a certain threshold, based on Phred score
+# 
 # Uses fastx_clipper to remove adaptors
-# Website: https://code.google.com/p/fastx_clipper/
+# Website: http://hannonlab.cshl.edu/fastx_toolkit/commandline.html#fastx_clipper_usage
 
 # Import OS features to run external programs
 import os
