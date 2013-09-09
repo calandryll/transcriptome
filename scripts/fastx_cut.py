@@ -27,44 +27,44 @@ fastq_indir = "/home/chris/transcriptome/fastq/original/"
 fastq_outdir = "/home/chris/transcriptome/fastq/fastx/clipped/"
 
 # fastx_clipper -v -i BC54.fa -a CTGTAGGCACCATCAATTCGTA -o BC54.clipped.fa
-# -v = verbose, -a = adaptor, -i = input file, -o = output file
+# -v = verbose, -a = adaptor, -i = input file, -o = output file, -Q 32 (needed for reading files)
 
 # Sample 1
 print "Analyzing Sample 1..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_1_L001_clipped.fastq -i %s/Sample_1_L001.fastq > %s/Sample_1_L001_clipped.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_1_L002_clipped.fastq -i %s/Sample_1_L002.fastq > %s/Sample_1_L002_clipped.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_1_L001_clipped.fastq -i %s/Sample_1_L001.fastq > %s/Sample_1_L001_clipped.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_1_L002_clipped.fastq -i %s/Sample_1_L002.fastq > %s/Sample_1_L002_clipped.log" % (index_2, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 2
 print "Analyzing Sample 2..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_2_L001_clipped.fastq -i %s/Sample_2_L001.fastq > %s/Sample_2_L001_clipped.log" % (index_4, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_2_L002_clipped.fastq -i %s/Sample_2_L002.fastq > %s/Sample_2_L002_clipped.log" % (index_4, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_2_L001_clipped.fastq -i %s/Sample_2_L001.fastq > %s/Sample_2_L001_clipped.log" % (index_4, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_2_L002_clipped.fastq -i %s/Sample_2_L002.fastq > %s/Sample_2_L002_clipped.log" % (index_4, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 3
 print "Analyzing Sample 3..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_3_L001_clipped.fastq -i %s/Sample_3_L001.fastq > %s/Sample_3_L001_clipped.log" % (index_5, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_3_L002_clipped.fastq -i %s/Sample_3_L002.fastq > %s/Sample_3_L002_clipped.log" % (index_5, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_3_L001_clipped.fastq -i %s/Sample_3_L001.fastq > %s/Sample_3_L001_clipped.log" % (index_5, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_3_L002_clipped.fastq -i %s/Sample_3_L002.fastq > %s/Sample_3_L002_clipped.log" % (index_5, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 4
 print "Analyzing Sample 4..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_4_L001_clipped.fastq -i %s/Sample_4_L001.fastq > %s/Sample_4_L001_clipped.log" % (index_6, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_4_L002_clipped.fastq -i %s/Sample_4_L002.fastq > %s/Sample_4_L002_clipped.log" % (index_6, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_4_L001_clipped.fastq -i %s/Sample_4_L001.fastq > %s/Sample_4_L001_clipped.log" % (index_6, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_4_L002_clipped.fastq -i %s/Sample_4_L002.fastq > %s/Sample_4_L002_clipped.log" % (index_6, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 5
 print "Analyzing Sample 5..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_5_L001_clipped.fastq -i %s/Sample_5_L001.fastq > %s/Sample_5_L001_clipped.log" % (index_7, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_5_L002_clipped.fastq -i %s/Sample_5_L002.fastq > %s/Sample_5_L002_clipped.log" % (index_7, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_5_L001_clipped.fastq -i %s/Sample_5_L001.fastq > %s/Sample_5_L001_clipped.log" % (index_7, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_5_L002_clipped.fastq -i %s/Sample_5_L002.fastq > %s/Sample_5_L002_clipped.log" % (index_7, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 6
 print "Analyzing Sample 6..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_6_L001_clipped.fastq -i %s/Sample_6_L001.fastq > %s/Sample_6_L001_clipped.log" % (index_12, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_6_L002_clipped.fastq -i %s/Sample_6_L002.fastq > %s/Sample_6_L002_clipped.log" % (index_12, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_6_L001_clipped.fastq -i %s/Sample_6_L001.fastq > %s/Sample_6_L001_clipped.log" % (index_12, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_6_L002_clipped.fastq -i %s/Sample_6_L002.fastq > %s/Sample_6_L002_clipped.log" % (index_12, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 7
 print "Analyzing Sample 7..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_7_L001_clipped.fastq -i %s/Sample_7_L001.fastq > %s/Sample_7_L001_clipped.log" % (index_1, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_7_L002_clipped.fastq -i %s/Sample_7_L002.fastq > %s/Sample_7_L002_clipped.log" % (index_1, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_7_L001_clipped.fastq -i %s/Sample_7_L001.fastq > %s/Sample_7_L001_clipped.log" % (index_1, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_7_L002_clipped.fastq -i %s/Sample_7_L002.fastq > %s/Sample_7_L002_clipped.log" % (index_1, fastq_outdir, fastq_indir, fastq_outdir))
 
 # Sample 8
 print "Analyzing Sample 8..."
-os.system("fastx_clipper -v  -a %s -o %s/Sample_8_L001_clipped.fastq -i %s/Sample_8_L001.fastq > %s/Sample_8_L001_clipped.log" % (index_3, fastq_outdir, fastq_indir, fastq_outdir))
-os.system("fastx_clipper -v  -a %s -o %s/Sample_8_L002_clipped.fastq -i %s/Sample_8_L002.fastq > %s/Sample_8_L002_clipped.log" % (index_3, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_8_L001_clipped.fastq -i %s/Sample_8_L001.fastq > %s/Sample_8_L001_clipped.log" % (index_3, fastq_outdir, fastq_indir, fastq_outdir))
+os.system("fastx_clipper -v -Q 32  -a %s -o %s/Sample_8_L002_clipped.fastq -i %s/Sample_8_L002.fastq > %s/Sample_8_L002_clipped.log" % (index_3, fastq_outdir, fastq_indir, fastq_outdir))
