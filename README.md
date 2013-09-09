@@ -1,4 +1,4 @@
 Transcriptome
 =============
 
-*Project Focus:* The marine raphidophyte Heterosigma akashiwo is a cosmopolitan harmful alga, with increasing global impact on coastal environments. It has been implicated in fish killing blooms in China, Japan, New Zealand and South Africa, and blooms annually in Delaware’s inland bays.  Although still under investigation, several studies have demonstrated that production of reactive oxygen species (ROS) may play a role in the toxicity of Heterosigma. Research in [Coyne’s lab](http://www.udel.edu/MERL/) demonstrated attachment of the human pathogen, Vibrio cholerae to Heterosigma cells during natural blooms of Heterosigma and in laboratory culture experiments.  The nature of this interaction between Heterosigma and Vibrio is not known, but Vibrio spp. are known to form biofilms on algal cells, which may facilitate uptake of bioavailable iron by both the algae and associated bacteria.  For Heterosigma, this increase in redox-active iron may also play a role in production of ROS, suggesting that association with Vibrio may ultimately increase the toxicity of Heterosigma.  
+*Project Focus:* Examining the transcriptome of Heterosigma
