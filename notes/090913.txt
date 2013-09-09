@@ -13,6 +13,12 @@ Adding -Q 32 to any of the fastx_toolkit will allow running of the fastq files. 
 	1. Run fastx_cut.py (removes adapters)
 		a. Based on misc/Illumina_adapters.txt and associated barcodes with each sample
 		b. _clipped indicates sequences in file have had adapter removed
+		c. verbose command was copied to .log file
 	2. Run fastx_trim.py (removes low quality bp)
 		a. Remove any basepair below a Phred score of 20 and keep those sequences above 90%
 		b. _trimmed indicates clipped sequences have been quality trimmed
+		c. verboase was used to copy information to .log file
+	3. Run fastx_collapse.py (collapses duplicates into singles)
+		a. _collapsed indicated collapsed sequences from trimmed files
+	4. Run fastx_stats.py (quality stats)
+		a. text files generated can be analyzed using galaxy (Simple Fool's Guide)

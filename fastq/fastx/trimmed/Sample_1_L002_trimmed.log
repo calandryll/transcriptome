@@ -1,0 +1,5 @@
+Quality cut-off: 20
+Minimum percentage: 90
+Input: 88644 reads.
+Output: 85836 reads.
+discarded 2808 (3%) low-quality reads.
