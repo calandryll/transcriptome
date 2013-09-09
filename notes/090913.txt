@@ -1,0 +1,18 @@
+09/09/2013
+==========
+Created index.html for simple examination of fastqc files.
+
+Sample lanes will be kept separate during the process.  Different lanes are currently technical/machine replicates
+	to prevent errors in statistics, samples will be kept separate.  This is an excellent way to examine the
+	difference between lanes.
+
+Trying fastx_toolkit to examine differences:
+Adding -Q 32 to any of the fastx_toolkit will allow running of the fastq files.  Will try using
+	those commands to examine differences between fastx_toolkit and cutadapt.
+
+	1. Run fastx_cut.py (removes adapters)
+		a. Based on misc/Illumina_adapters.txt and associated barcodes with each sample
+		b. _clipped indicates sequences in file have had adapter removed
+	2. Run fastx_trim.py (removes low quality bp)
+		a. Remove any basepair below a Phred score of 20 and keep those sequences above 90%
+		b. _trimmed indicates clipped sequences have been quality trimmed
