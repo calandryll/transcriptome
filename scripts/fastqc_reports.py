@@ -1,6 +1,7 @@
 #!/usr/bin/python -tt
 # Uses fastqc to examine quality of raw and trimmed data
 # Website: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+# Change of directory can be used to run on different files
 
 # Import OS features to run external programs
 import os
@@ -19,9 +20,9 @@ print "Fastqc %s\n" % (v)
 
 # Setup directories to the data
 #fastq_raw = "/home/chris/transcriptome/fastq/original/"
-fastq_trimmed = "/home/chris/transcriptome/fastq/shorten/"
+fastq_trimmed = "/home/chris/transcriptome/fastq/poly/"
 #fastq_routput = "/home/chris/transcriptome/fastq/reports/raw"
-fastq_toutput = "/home/chris/transcriptome/fastq/reports/shorten/"
+fastq_toutput = "/home/chris/transcriptome/fastq/reports/poly/"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Trimmed Directory: %s\n" % (fastq_trimmed)

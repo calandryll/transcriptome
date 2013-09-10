@@ -1,0 +1,108 @@
+cutadapt version 1.2.1
+Command line parameters: -m 20 -q 20 -a AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -a TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT --times=2 -o /home/chris/transcriptome/fastq/poly/Sample_6_L001_poly.fastq /home/chris/transcriptome/fastq/shorten/Sample_6_L001_shorten.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 2
+   Processed reads:     22851589
+   Processed bases:    884748075 bp (884.7 Mbp)
+     Trimmed reads:       913555 (4.0%)
+   Quality-trimmed:        16260 bp (7.7 Mbp) (0.00% of total)
+     Trimmed bases:      7676388 bp (7.7 Mbp) (0.87% of total)
+   Too short reads:        52607 (0.2% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:    556.68 s
+     Time per read:      0.02 ms
+
+=== Adapter 1 ===
+
+Adapter 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', length 35, was trimmed 1006477 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Lengths of removed sequences
+length	count	expected	max. errors
+3	597988	357056.1	0
+4	202984	89264.0	0
+5	81359	22316.0	0
+6	29299	5579.0	0
+7	10644	1394.8	0
+8	5483	348.7	0
+9	3413	87.2	0
+10	19060	21.8	1
+11	15280	5.4	1
+12	8135	1.4	1
+13	5021	0.3	1
+14	4955	0.1	1
+15	2639	0.0	1
+16	1306	0.0	1
+17	912	0.0	1
+18	542	0.0	1
+19	463	0.0	1
+20	5137	0.0	2
+21	3082	0.0	2
+22	1585	0.0	2
+23	1253	0.0	2
+24	999	0.0	2
+25	950	0.0	2
+26	450	0.0	2
+27	247	0.0	2
+28	206	0.0	2
+29	187	0.0	2
+30	890	0.0	3
+31	591	0.0	3
+32	233	0.0	3
+33	149	0.0	3
+34	147	0.0	3
+35	128	0.0	3
+36	92	0.0	3
+37	136	0.0	3
+38	66	0.0	3
+39	466	0.0	3
+
+=== Adapter 2 ===
+
+Adapter 'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT', length 35, was trimmed 820633 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Lengths of removed sequences
+length	count	expected	max. errors
+3	513634	357056.1	0
+4	179581	89264.0	0
+5	63502	22316.0	0
+6	20605	5579.0	0
+7	7750	1394.8	0
+8	3220	348.7	0
+9	1971	87.2	0
+10	8869	21.8	1
+11	5524	5.4	1
+12	2952	1.4	1
+13	1888	0.3	1
+14	1309	0.1	1
+15	979	0.0	1
+16	970	0.0	1
+17	854	0.0	1
+18	594	0.0	1
+19	524	0.0	1
+20	842	0.0	2
+21	645	0.0	2
+22	545	0.0	2
+23	532	0.0	2
+24	428	0.0	2
+25	408	0.0	2
+26	212	0.0	2
+27	204	0.0	2
+28	166	0.0	2
+29	129	0.0	2
+30	193	0.0	3
+31	126	0.0	3
+32	163	0.0	3
+33	124	0.0	3
+34	130	0.0	3
+35	132	0.0	3
+36	214	0.0	3
+37	110	0.0	3
+38	106	0.0	3
+39	498	0.0	3
+

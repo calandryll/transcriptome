@@ -1,0 +1,92 @@
+cutadapt version 1.2.1
+Command line parameters: -m 20 -q 20 -a AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -a TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT --times=2 -o /home/chris/transcriptome/fastq/poly/Sample_1_L002_poly.fastq /home/chris/transcriptome/fastq/shorten/Sample_1_L002_shorten.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 2
+   Processed reads:        89648
+   Processed bases:      3392249 bp (3.4 Mbp)
+     Trimmed reads:         3776 (4.2%)
+   Quality-trimmed:          123 bp (0.0 Mbp) (0.00% of total)
+     Trimmed bases:        32654 bp (0.0 Mbp) (0.96% of total)
+   Too short reads:         2368 (2.6% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:      2.20 s
+     Time per read:      0.02 ms
+
+=== Adapter 1 ===
+
+Adapter 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', length 35, was trimmed 4310 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Lengths of removed sequences
+length	count	expected	max. errors
+3	2712	1400.8	0
+4	734	350.2	0
+5	337	87.5	0
+6	88	21.9	0
+7	35	5.5	0
+8	28	1.4	0
+9	26	0.3	0
+10	74	0.1	1
+11	68	0.0	1
+12	32	0.0	1
+13	32	0.0	1
+14	14	0.0	1
+15	24	0.0	1
+16	12	0.0	1
+17	3	0.0	1
+18	4	0.0	1
+19	4	0.0	1
+20	12	0.0	2
+21	12	0.0	2
+22	6	0.0	2
+23	4	0.0	2
+24	5	0.0	2
+25	8	0.0	2
+26	4	0.0	2
+27	6	0.0	2
+28	2	0.0	2
+30	8	0.0	3
+31	2	0.0	3
+34	4	0.0	3
+35	4	0.0	3
+36	2	0.0	3
+37	2	0.0	3
+39	2	0.0	3
+
+=== Adapter 2 ===
+
+Adapter 'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT', length 35, was trimmed 3242 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Lengths of removed sequences
+length	count	expected	max. errors
+3	1917	1400.8	0
+4	805	350.2	0
+5	257	87.5	0
+6	74	21.9	0
+7	24	5.5	0
+8	13	1.4	0
+9	16	0.3	0
+10	26	0.1	1
+11	28	0.0	1
+12	12	0.0	1
+13	4	0.0	1
+14	4	0.0	1
+15	9	0.0	1
+16	1	0.0	1
+17	10	0.0	1
+18	2	0.0	1
+19	10	0.0	1
+20	6	0.0	2
+21	4	0.0	2
+22	4	0.0	2
+23	2	0.0	2
+26	2	0.0	2
+27	4	0.0	2
+28	2	0.0	2
+39	6	0.0	3
+

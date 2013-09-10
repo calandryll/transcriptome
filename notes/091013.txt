@@ -1,0 +1,12 @@
+9/10/2013
+=========
+
+Examination of the K-Mer graphs, from fastqc output, there seems to be a large poly-a and poly-t sequences.
+
+	1. Run poly_cut.py
+		a. cutadapt with poly-a and t sequences to be trimmed
+		b. --times=x, where x is the number of multiple sequences you want to run
+			i. default running with multiple adapters will ignore any after the best one is found
+				addtion of times will run all of the adapters.
+		c. _poly created from shortened samples
+
