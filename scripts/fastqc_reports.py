@@ -1,5 +1,6 @@
 #!/usr/bin/python -tt
 # Uses fastqc to examine quality of raw and trimmed data
+# Website: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 # Import OS features to run external programs
 import os
