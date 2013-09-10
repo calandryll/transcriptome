@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Sample_7_L002_shorten.fastq
+PASS	Per base sequence quality	Sample_7_L002_shorten.fastq
+PASS	Per sequence quality scores	Sample_7_L002_shorten.fastq
+PASS	Per base sequence content	Sample_7_L002_shorten.fastq
+PASS	Per base GC content	Sample_7_L002_shorten.fastq
+PASS	Per sequence GC content	Sample_7_L002_shorten.fastq
+PASS	Per base N content	Sample_7_L002_shorten.fastq
+WARN	Sequence Length Distribution	Sample_7_L002_shorten.fastq
+FAIL	Sequence Duplication Levels	Sample_7_L002_shorten.fastq
+PASS	Overrepresented sequences	Sample_7_L002_shorten.fastq
+WARN	Kmer Content	Sample_7_L002_shorten.fastq

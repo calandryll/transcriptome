@@ -18,9 +18,9 @@ print "Fastqc %s\n" % (v)
 
 # Setup directories to the data
 #fastq_raw = "/home/chris/transcriptome/fastq/original/"
-fastq_trimmed = "/home/chris/transcriptome/fastq/trimmed/"
+fastq_trimmed = "/home/chris/transcriptome/fastq/shorten/"
 #fastq_routput = "/home/chris/transcriptome/fastq/reports/raw"
-fastq_toutput = "/home/chris/transcriptome/fastq/reports/trimmed"
+fastq_toutput = "/home/chris/transcriptome/fastq/reports/shorten/"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Trimmed Directory: %s\n" % (fastq_trimmed)
@@ -29,6 +29,7 @@ print "Scanning Raw Directory..."
 # Pull file names from raw
 #fastq_rfiles = glob.glob1(fastq_raw, "*.fastq")
 fastq_tfiles = glob.glob1(fastq_trimmed, "*.fastq")
+print fastq_tfiles
 
 #raw = len(list(fastq_rfiles))
 #for files in range(raw):

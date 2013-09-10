@@ -22,3 +22,14 @@ Adding -Q 32 to any of the fastx_toolkit will allow running of the fastq files. 
 		a. _collapsed indicated collapsed sequences from trimmed files
 	4. Run fastx_stats.py (quality stats)
 		a. text files generated can be analyzed using galaxy (Simple Fool's Guide)
+		b. -N is not recognized by galaxy or the downloaded script from fastx_toolkit
+	5. Run fastqc_reports.py 
+		a. on trimmed data from fastx_toolkit to compare to cutadapt
+
+Examination of the output from fastqc, the first 13 bases seem to be quite variable.  Removal of the them will be carried out using fastx_trimmer.
+
+	1. Run fastx_shorten.py
+		a. removes the first 13 basepairs
+		b. _shorten from the trimmed sequences of cutadapt
+	2. Run fastqc_reports.py
+		a. on shortened sequences
