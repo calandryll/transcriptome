@@ -10,3 +10,9 @@ Examination of the K-Mer graphs, from fastqc output, there seems to be a large p
 				addtion of times will run all of the adapters.
 		c. _poly created from shortened samples
 
+Support for removal of the first 13 bases: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2896536/
+Increasing kmer selection can be done to 10, which may change things: http://pathogenomics.bham.ac.uk/blog/2013/04/adaptor-trim-or-die-experiences-with-nextera-libraries/
+	1. fastqc -k 10 fastqfile1
+Trimmomatic (http://www.usadellab.org/cms/index.php?page=trimmomatic) will also be tried on samples to examine the effect on kmers
+	1. SLIDINGWINDOW 5:20 (5 bases long:Phred 20)
+	2. A test run on Sample_2_L001_shorten.fastq removes all the sequences, probably not a worthwhile venture

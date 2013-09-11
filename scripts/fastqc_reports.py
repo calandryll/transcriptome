@@ -20,9 +20,9 @@ print "Fastqc %s\n" % (v)
 
 # Setup directories to the data
 #fastq_raw = "/home/chris/transcriptome/fastq/original/"
-fastq_trimmed = "/home/chris/transcriptome/fastq/poly/"
+fastq_trimmed = "/home/chris/transcriptome/fastq/poly_any/"
 #fastq_routput = "/home/chris/transcriptome/fastq/reports/raw"
-fastq_toutput = "/home/chris/transcriptome/fastq/reports/poly/"
+fastq_toutput = "/home/chris/transcriptome/fastq/reports/poly_any/"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Trimmed Directory: %s\n" % (fastq_trimmed)
