@@ -29,6 +29,7 @@ fastq_names = sorted(glob.glob1(input_dir, "*.fastq"))
 print fastq_names
 
 trim = len(list(fastq_files))
-for files in range(trim)
+
+for files in range(trim):
 	print fastq_names[files]
 	print os.path.splitext(fastq_names[files])[0]
