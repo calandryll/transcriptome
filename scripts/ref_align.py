@@ -33,10 +33,10 @@ configfiles = [os.path.join(dirpath, f)
     for f in files if f.endswith('.fastq')]
 
 print configfiles
-trim = len(list(fastq_files))
-for files in range(trim):
-	print fastq_files[files]
-	print os.path.splitext(fastq_files[files])[0]
+#trim = len(list(fastq_files))
+#for files in range(trim):
+	#print fastq_files[files]
+	#print os.path.splitext(fastq_files[files])[0]
 	#tophat_run = input_dir + fastq_files[files]
 	
 	# Run fastqc
