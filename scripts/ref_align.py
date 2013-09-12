@@ -25,7 +25,7 @@ print "Scanning Directory..."
 # Pull file names from raw
 #fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
 #print fastq_files
-fastq_names = sorted(glob.glob1(fastq_files, "*.fastq"))
+#fastq_names = sorted(glob.glob1(fastq_files, "*.fastq"))
 #print fastq_names
 
 configfiles = [os.path.join(dirpath, f)
