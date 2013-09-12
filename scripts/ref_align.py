@@ -28,7 +28,7 @@ fastq_files = sorted(glob.glob1(input_dir, "*.fastq"))
 trim = len(list(fastq_files))
 for files in range(trim):
 	print fastq_files[files]
-	print os.path.basename(fastq_files[files])
+	print os.path.splitext(fastq_files[files])
 	#tophat_run = input_dir + fastq_files[files]
 	
 	# Run fastqc
