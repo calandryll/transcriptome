@@ -5,6 +5,7 @@
 # Import OS features to run external programs
 import os
 import glob
+import fnmatch
 
 # Directories for input and output
 input_dir = "/home/chris/transcriptome/fastq/poly"
@@ -22,10 +23,16 @@ print "Directory: %s\n" % (input_dir)
 print "Scanning Directory..."
 
 # Pull file names from raw
-fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
-print fastq_files
+#fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
+#print fastq_files
 fastq_names = sorted(glob.glob1(fastq_files, "*.fastq"))
-print fastq_names
+#print fastq_names
+
+configfiles = [os.path.join(dirpath, f)
+    for dirpath, dirnames, files in os.walk(input_dir)
+    for f in files if f.endswith('.fastq')]
+
+print configfiles
 trim = len(list(fastq_files))
 for files in range(trim):
 	print fastq_files[files]
