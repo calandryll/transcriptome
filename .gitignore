@@ -9,3 +9,7 @@ programs/
 *.fa
 *.bt2
 *.ebwt
+*.gtf
+*.bam
+*.bed
+*.fpkm_tracking
