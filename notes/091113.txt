@@ -13,7 +13,7 @@ cutadapt -b will only search the ends of the sequences.  Therefore the time spen
 		a. using fastx_clipper, etc. cutadapt appears to give cleaner results
 
 Rename of best_candidates.eclipsed_orfs_removed.gff3 to H_akashiwo.gff3
-Rename of Trinity_all.fasta to H_akashiwo.fasta
+Rename of High_exp.fasta to H_akashiwo.fasta
 Building of bowtie index
 
 	1. bowtie2-build H_akashiwo.fasta H_akashiwo

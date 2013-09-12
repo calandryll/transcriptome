@@ -1,0 +1,14 @@
+09/12/2013
+==========
+
+Index will be built using bowtie2-build
+	1. bowtie2-build H_akashiwo.fasta (previously named High_exp.fasta)
+		a. not possible to build off a gff file
+	2. both -p 4 and -p 8 will be tried
+		a. this sets the number of threads used by the CPU. Default is 1.
+			i. Default ~18s for Sample_1 (~77,000 sequences) (different index)
+			ii. -p 4 ~11s for Sample_1
+			iii. -p 8 ~12s for Sample_1
+		b. A -p 4 will be used, seems to be a slight increase in time, with a larger sequence #
+			this time difference may decrease computational time
+
