@@ -22,25 +22,6 @@ output_dir = "/home/chris/transcriptome/fastq/align"
 print "Directory: %s\n" % (input_dir)
 print "Scanning Directory..."
 
-# Pull file names from raw
-#fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
-#print fastq_files
-#fastq_names = sorted(glob.glob1(fastq_files, "*.fastq"))
-#print fastq_names
-
-for r,d,f in os.walk(input_dir):
-    for files in f:
-        if files.endswith(".fastq"):
-             print sorted(files)
-
-
-#trim = len(list(fastq_files))
-#for files in range(trim):
-	#print fastq_files[files]
-	#print os.path.splitext(fastq_files[files])[0]
-	#tophat_run = input_dir + fastq_files[files]
-	
-	# Run fastqc
-	#os.system("fastqc -o %s %s" % (fastq_toutput, fastqc_trun))
-	# Run tophat with 4 threads, should be slightly faster than the default 1 thread
-	#os.system("tophat -p 4 -o %s/lane 1/Sample_1 %s %s" % (output_dir, reference, input_dir))
+# Pull files from directory
+blarg = glob.iglob(input_dir + "/*/*.txt")
+print blarg
