@@ -31,5 +31,5 @@ print fastq_names
 trim = len(list(fastq_files))
 
 for files in range(trim):
-	print fastq_names[files]
-	print os.path.splitext(fastq_names[files])[0]
+	print fastq_files[files]
+	print os.path.splitext(fastq_files[files])[0]
