@@ -1,4 +1,0 @@
-9/11/2013
-=========
-
-cutadapt -b will only search the ends of the sequences.  Therefore the time spent processing them was wasted.  Files were deleted.

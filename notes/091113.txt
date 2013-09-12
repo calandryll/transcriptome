@@ -1,0 +1,20 @@
+9/11/2013
+=========
+
+cutadapt -b will only search the ends of the sequences.  Therefore the time spent processing them was wasted.  Files were deleted.
+
+	1. poly_cut.py
+		a. modified to use fastx_clipper to remove both poly-a and poly-t, unfortunately needs to be run twice
+			i. -l 20 was used to drop any sequence less than 20 bp in length
+		b. _temp file is removed since both are needed to be removed
+		c. _temp.log records the number of sequences dropped from poly-a removal
+		c. fastqc will be run to examine changes
+	2. Removed samples created by fastx_toolkit method
+		a. using fastx_clipper, etc. cutadapt appears to give cleaner results
+
+Rename of best_candidates.eclipsed_orfs_removed.gff3 to H_akashiwo.gff3
+Rename of Trinity_all.fasta to H_akashiwo.fasta
+Building of bowtie index
+
+	1. bowtie2-build H_akashiwo.fasta H_akashiwo
+	2. bowtie-build H_akashiwo.fasta H_akashiwo

@@ -5,4 +5,7 @@ programs/
 *.fasta
 *.fastq
 *.gff
+*.gff3
 *.fa
+*.bt2
+*.ebwt
