@@ -31,7 +31,7 @@ print "Scanning Directory..."
 for r,d,f in os.walk(input_dir):
     for files in f:
         if files.endswith(".fastq"):
-             print files
+             print sorted(files)
 
 
 #trim = len(list(fastq_files))
