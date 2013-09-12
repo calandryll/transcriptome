@@ -28,9 +28,10 @@ print "Scanning Directory..."
 #fastq_names = sorted(glob.glob1(fastq_files, "*.fastq"))
 #print fastq_names
 
-configfiles = [os.path.join(dirpath, f)
-    for dirpath, dirnames, files in os.walk(input_dir)
-    for f in files if f.endswith('.fastq')]
+configfiles = [os.path.join(dirpath, f) for dirpath, dirnames, files in os.walk(input_dir) for f in files if f.endswith('.fastq')]
+blarg = os.path.join(configfiles, basename)
+print blarg
+
 
 print configfiles
 #trim = len(list(fastq_files))
