@@ -24,8 +24,9 @@ print "Scanning Directory..."
 
 # Pull files from directory
 fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
-print fastq_files
-fastq_names = sorted(glob.glob1(input_dir, "*.fastq"))
+#print fastq_files
+blarg = input_dir + "/*/"
+fastq_names = sorted(glob.glob1(blarg, "*.fastq"))
 print fastq_names
 
 trim = len(list(fastq_files))
