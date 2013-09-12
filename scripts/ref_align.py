@@ -21,8 +21,10 @@ output_dir = "/home/chris/transcriptome/fastq/align"
 print "Directory: %s\n" % (input_dir)
 print "Scanning Directory..."
 
+blarg = input_dir + "/*/"
+print blarg
 # Pull file names from raw
-fastq_files = sorted(glob.glob1(input_dir + "/*/", "*.fastq"))
+fastq_files = sorted(glob.glob1(blarg, "*.fastq"))
 #print fastq_files
 
 trim = len(list(fastq_files))
