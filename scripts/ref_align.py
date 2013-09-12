@@ -23,5 +23,5 @@ print "Directory: %s\n" % (input_dir)
 print "Scanning Directory..."
 
 # Pull files from directory
-blarg = glob.iglob(input_dir + "/*/*.txt")
+blarg = glob.iglob(input_dir + "/*/*.fastq")
 print blarg
