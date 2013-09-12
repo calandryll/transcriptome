@@ -23,5 +23,12 @@ print "Directory: %s\n" % (input_dir)
 print "Scanning Directory..."
 
 # Pull files from directory
-blarg = glob.iglob(input_dir + "/*/*.fastq")
-print blarg
+fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
+print fastq_files
+fastq_names = sorted(glob.glob1(input_dir, "*.fastq"))
+print fastq_names
+
+trim = len(list(fastq_files))
+for files in range(trim)
+	print fastq_names[files]
+	print os.path.splitext(fastq_names[files])[0]
