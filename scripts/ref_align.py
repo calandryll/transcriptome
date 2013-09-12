@@ -23,12 +23,12 @@ print "Scanning Directory..."
 
 # Pull file names from raw
 fastq_files = glob.glob1(input_dir, "*.fastq")
-print fastq_files
+#print fastq_files
 
 trim = len(list(fastq_files))
 for files in range(trim):
 	print fastq_files[files]
-	print os.path.splitext(fastq_files)[files]
+	#print os.path.splitext(fastq_files)[files]
 	#tophat_run = input_dir + fastq_files[files]
 	
 	# Run fastqc
