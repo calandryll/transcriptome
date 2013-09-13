@@ -5,18 +5,11 @@
 # Import OS features to run external programs
 import os
 import glob
-import fnmatch
 
 # Directories for input and output
 input_dir = "/home/chris/transcriptome/fastq/poly"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 output_dir = "/home/chris/transcriptome/fastq/align"
-
-# Setup directories to the data
-#fastq_raw = "/home/chris/transcriptome/fastq/original/"
-#fastq_trimmed = "/home/chris/transcriptome/fastq/poly/"
-#fastq_routput = "/home/chris/transcriptome/fastq/reports/raw"
-#fastq_toutput = "/home/chris/transcriptome/fastq/reports/poly/"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Directory: %s\n" % (input_dir)
@@ -24,10 +17,20 @@ print "Scanning Directory..."
 
 # Pull files from directory
 fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
-#print fastq_files
 
 trim = len(list(fastq_files))
-
 for files in range(trim):
-	print fastq_files[files]
-	print os.path.splitext(os.path.basename(fastq_files[files]))[0]
+	#print fastq_files[files]
+	sample_name = os.path.splitext(os.path.basename(fastq_files[files]))[0]
+	print "Analyzing %s..." % (sample_name)
+	
+	samdir = output_dir + "/" + sample_name
+	#print samdir
+	
+	# Create directory for output
+	#os.system("mkdir %s" % (samdir))
+
+	# Run tophat using H_akashiwo index
+	# -p 4 threads
+	
+	os.system("tophat -p 4 -o %s %s %s" % (samdir, reference, fastq_files[files]))

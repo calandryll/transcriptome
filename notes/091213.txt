@@ -12,3 +12,7 @@ Index will be built using bowtie2-build
 		b. A -p 4 will be used, seems to be a slight increase in time, with a larger sequence #
 			this time difference may decrease computational time
 
+Execution of TopHat
+	1. Run ref_align.py
+		a. Using the H_akashiwo index (built as above)
+		b. Each sample will be run separately and store in separate directories
