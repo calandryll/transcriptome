@@ -16,3 +16,8 @@ Execution of TopHat
 	1. Run ref_align.py
 		a. Using the H_akashiwo index (built as above)
 		b. Each sample will be run separately and store in separate directories
+
+Execution of Cufflinks
+	1. Run assemble.py
+		a. Basic options for running
+		b. As above

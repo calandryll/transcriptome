@@ -20,7 +20,7 @@ fastq_dir = sorted(glob.glob(input_dir + "/*/*"))
 
 trim = len(list(fastq_files))
 for files in range(trim):
-	print fastq_files[files]
+	#print fastq_files[files]
 	sample_name = os.path.splitext(os.path.basename(fastq_files[files]))[0]
 	dir_name = os.path.splitext(os.path.basename(fastq_dir[files]))[0]
 	print "Analyzing %s..." % (dir_name)
