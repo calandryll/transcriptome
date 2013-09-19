@@ -34,7 +34,7 @@ fasta_parse = SeqIO.parse(handle, "fasta")
 
 # Search FASTA file with tab delimited file
 print "Searching %s..." % (args.filename)	
-records = (r for r in fasta_parse if r.id in name)
+records = (r for r in fasta_parse if name in r.id)
 count = SeqIO.write(records, args.out_file, "fasta")
 print "Saved %i records to %s" % (count, args.out_file)
 
