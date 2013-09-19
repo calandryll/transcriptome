@@ -23,7 +23,7 @@ parser =  argparse.ArgumentParser()
 parser.add_argument("-v", "--version", action="version", version='Version 0.6')
 parser.add_argument("filename", help="location of FASTA file")
 parser.add_argument("out_file", help="filename for output of BLAST search results")
-parser.add_argument("name", help="Name of organism")
+#parser.add_argument("name", help="Name of organism")
 args = parser.parse_args()
 
 print "Loading %s to memory..." % (args.filename)
@@ -31,10 +31,11 @@ handle = open(args.filename, "rU")
 
 # Parse the data file
 fasta_parse = list(SeqIO.parse(handle, "fasta"))
+name = "Heterosigma akashiwo, Strain NB"
 
 # Search FASTA file with tab delimited file
 print "Searching %s..." % (args.filename)	
-records = (r for r in fasta_parse if args.name in r.description.split()[3])
+records = (r for r in fasta_parse if name in r.description.split()[3])
 count = SeqIO.write(records, args.out_file, "fasta")
 print "Saved %i records to %s" % (count, args.out_file)
 
