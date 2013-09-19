@@ -1,0 +1,13 @@
+/usr/bin/cuffmerge -s ../reference/H_akashiwo.fa -p 4 assemblies.txt
+gtf_to_sam -F lane1/Sample_1_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_filedXWPe0
+gtf_to_sam -F lane1/Sample_2_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_fileYbVs0H
+gtf_to_sam -F lane1/Sample_3_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_filei1awVt
+gtf_to_sam -F lane1/Sample_4_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_fileKwTtSj
+gtf_to_sam -F lane1/Sample_5_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_fileaXahUd
+gtf_to_sam -F lane1/Sample_6_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_file81Wo1b
+gtf_to_sam -F lane1/Sample_7_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_fileOI8jce
+gtf_to_sam -F lane1/Sample_8_L001_poly_any/transcripts.gtf ./merged_asm/tmp/gtf2sam_fileq0Ytwk
+sort -k 3,3 -k 4,4n --temporary-directory=./merged_asm//tmp/ ./merged_asm/tmp/gtf2sam_filedXWPe0 ./merged_asm/tmp/gtf2sam_fileYbVs0H ./merged_asm/tmp/gtf2sam_filei1awVt ./merged_asm/tmp/gtf2sam_fileKwTtSj ./merged_asm/tmp/gtf2sam_fileaXahUd ./merged_asm/tmp/gtf2sam_file81Wo1b ./merged_asm/tmp/gtf2sam_fileOI8jce ./merged_asm/tmp/gtf2sam_fileq0Ytwk > ./merged_asm/tmp/mergeSam_fileRz00Mu
+cufflinks -o ./merged_asm/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 4 ./merged_asm/tmp/mergeSam_fileRz00Mu
+cuffcompare -o tmp_meta_asm -C -G  -s ../reference/H_akashiwo.fa ./merged_asm//transcripts.gtf
+cuffcompare -o tmp_meta_asm -C -G  -s ../reference/H_akashiwo.fa ./merged_asm//merged.gtf

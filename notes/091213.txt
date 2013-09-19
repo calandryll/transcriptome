@@ -21,3 +21,8 @@ Execution of Cufflinks
 	1. Run assemble.py
 		a. Basic options for running
 		b. As above
+
+Examine Drosophilia sample files to see what C1, C2 stands for to understand proctol from Trapnell, et al 2012 paper
+
+Further reading of cufflinks/tophat manual, it would be better to run tophat with H_akashiwo.gff3 instead of building 
+	from H_akashiwo.fa, will run a test run

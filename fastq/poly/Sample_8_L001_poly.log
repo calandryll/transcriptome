@@ -1,0 +1,7 @@
+Clipping Adapter: TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+Min. Length: 35
+Input: 12610842 reads.
+Output: 11509246 reads.
+discarded 1034260 too-short reads.
+discarded 67336 adapter-only reads.
+discarded 0 N reads.

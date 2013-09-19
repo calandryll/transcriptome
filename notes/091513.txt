@@ -1,0 +1,4 @@
+09/15/2013
+==========
+
+Samples will be re-trimmed to remove any sequence <35 bp.  Therefore, the range should be 35-39.

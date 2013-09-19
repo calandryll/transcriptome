@@ -13,3 +13,4 @@ programs/
 *.bam
 *.bed
 *.fpkm_tracking
+*.gz
