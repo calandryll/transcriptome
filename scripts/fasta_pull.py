@@ -31,8 +31,9 @@ handle = open(args.filename, "rU")
 
 # Parse the data file
 fasta_parse = SeqIO.parse(handle, "fasta")
+blarg = 10
 
-for i in 10:
+for i in blarg:
 	print fasta_parse[i].id
 
 # Search FASTA file with tab delimited file
