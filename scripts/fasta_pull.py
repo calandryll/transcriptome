@@ -30,7 +30,7 @@ print "Loading %s to memory..." % (args.filename)
 handle = open(args.filename, "rU")
 
 # Parse the data file
-fasta_parse = SeqIO.parse(handle, "fasta")
+fasta_parse = list(SeqIO.parse(handle, "fasta"))
 
 for i in range(1,10):
 	print fasta_parse[i].id
