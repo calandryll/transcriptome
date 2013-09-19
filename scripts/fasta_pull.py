@@ -33,7 +33,7 @@ handle = open(args.filename, "rU")
 fasta_parse = list(SeqIO.parse(handle, "fasta"))
 print "Searching %s..." % (args.filename)
 for i in range(1,10):
-	print fasta_parse[i].organism
+	print fasta_parse[i].annotations["organism"]
 
 # Search FASTA file with tab delimited file
 # print "Searching %s..." % (args.filename)	
