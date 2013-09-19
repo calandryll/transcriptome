@@ -32,11 +32,14 @@ handle = open(args.filename, "rU")
 # Parse the data file
 fasta_parse = SeqIO.parse(handle, "fasta")
 
+for i in 10:
+	print fasta_parse[i].id
+
 # Search FASTA file with tab delimited file
-print "Searching %s..." % (args.filename)	
-records = (r for r in fasta_parse if args.name in r.id)
-count = SeqIO.write(records, args.out_file, "fasta")
-print "Saved %i records to %s" % (count, args.out_file)
+# print "Searching %s..." % (args.filename)	
+# records = (r for r in fasta_parse if args.name in r.id)
+# count = SeqIO.write(records, args.out_file, "fasta")
+# print "Saved %i records to %s" % (count, args.out_file)
 
 # Begin for loop to write several files
 # for i in range(len_file):
