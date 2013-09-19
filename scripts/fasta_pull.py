@@ -23,7 +23,7 @@ parser =  argparse.ArgumentParser()
 parser.add_argument("-v", "--version", action="version", version='Version 0.6')
 parser.add_argument("filename", help="location of FASTA file")
 parser.add_argument("out_file", help="filename for output of BLAST search results")
-parser.add_argument("name", help="Strain of Heterosigma")
+parser.add_argument("strain", help="Strain of Heterosigma")
 args = parser.parse_args()
 
 print "Loading %s to memory..." % (args.filename)
@@ -32,13 +32,18 @@ handle = open(args.filename, "rU")
 # Parse the data file
 fasta_parse = list(SeqIO.parse(handle, "fasta"))
 
-name = "Heterosigma"
+# Use taxon ID instead 
+# Heterosigma = 536047
+
+taxon = "536047"
 
 # Search FASTA file with tab delimited file
 print "Searching %s for Heterosigma..." % (args.filename)	
-# 3 will give you species name only, 6 will give you strain name (Based on CAMERA fasta file)
-records = (r for r in fasta_parse if name in r.description.split()[3])
-strain = (r for r in records if args.name in r.description.split()[6])
+
+# 2 will give you taxon ID, 6 will give you the Strain Name (Based on CAMERA fasta)
+records = (r for r in fasta_parse if taxon in r.description.split()[2])
+print "Searching for %s..." % (args.strain)
+strain = (r for r in records if args.strain in r.description.split()[6])
 count = SeqIO.write(strain, args.out_file, "fasta")
 print "Saved %i records to %s" % (count, args.out_file)
 
