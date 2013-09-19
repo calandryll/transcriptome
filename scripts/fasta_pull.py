@@ -36,7 +36,7 @@ fasta_parse = list(SeqIO.parse(handle, "fasta"))
 # Search FASTA file with tab delimited file
 print "Searching %s..." % (args.filename)	
 # 3 will give you species name only, 6 will give you strain name (Based on CAMERA fasta file)
-records = (r for r in fasta_parse if name in r.description.split()[6)
+records = (r for r in fasta_parse if name in r.description.split()[6])
 count = SeqIO.write(records, args.out_file, "fasta")
 print "Saved %i records to %s" % (count, args.out_file)
 
