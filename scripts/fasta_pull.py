@@ -38,7 +38,7 @@ name = "Heterosigma"
 print "Searching %s for Heterosigma..." % (args.filename)	
 # 3 will give you species name only, 6 will give you strain name (Based on CAMERA fasta file)
 records = (r for r in fasta_parse if name in r.description.split()[3])
-strain = (r for r in fasta_parse if args.name in r.description.split()[6])
+strain = (r for r in records if args.name in r.description.split()[6])
 count = SeqIO.write(strain, args.out_file, "fasta")
 print "Saved %i records to %s" % (count, args.out_file)
 
