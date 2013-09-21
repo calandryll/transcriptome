@@ -1,8 +1,8 @@
-lane1/Sample_1_L001_poly_any/transcripts.gtf
-lane1/Sample_2_L001_poly_any/transcripts.gtf
-lane1/Sample_3_L001_poly_any/transcripts.gtf
-lane1/Sample_4_L001_poly_any/transcripts.gtf
-lane1/Sample_5_L001_poly_any/transcripts.gtf
-lane1/Sample_6_L001_poly_any/transcripts.gtf
-lane1/Sample_7_L001_poly_any/transcripts.gtf
-lane1/Sample_8_L001_poly_any/transcripts.gtf
+lane1/Sample_1_L001_poly/transcripts.gtf
+lane1/Sample_2_L001_poly/transcripts.gtf
+lane1/Sample_3_L001_poly/transcripts.gtf
+lane1/Sample_4_L001_poly/transcripts.gtf
+lane1/Sample_5_L001_poly/transcripts.gtf
+lane1/Sample_6_L001_poly/transcripts.gtf
+lane1/Sample_7_L001_poly/transcripts.gtf
+lane1/Sample_8_L001_poly/transcripts.gtf
