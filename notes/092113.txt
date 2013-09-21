@@ -1,0 +1,7 @@
+09/21/2013
+==========
+
+Continuation of assembly based on the Bowtie index of Ha_Strain_NB
+	1. assemble.py was run on aligned samples.
+	2. Because CAMERA file was not properly annotated, alignment and assembly will not have proper annotation
+		after assembly and cuffdiff of highest expressed sequences.  Sequences will be annotated using 

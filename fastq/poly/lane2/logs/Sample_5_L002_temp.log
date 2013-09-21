@@ -1,7 +1,7 @@
 Clipping Adapter: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-Min. Length: 20
+Min. Length: 35
 Input: 18349377 reads.
-Output: 17194515 reads.
-discarded 1019336 too-short reads.
+Output: 16277611 reads.
+discarded 1936548 too-short reads.
 discarded 126394 adapter-only reads.
-discarded 9132 N reads.
+discarded 8824 N reads.

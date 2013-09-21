@@ -1,0 +1,10 @@
+09/20/2013
+==========
+
+Download of Microbial Eukaryotic Transcriptome from CAMERA (https://portal.camera.calit2.net/)
+Heterosigma sequences from both Nucleotide and Peptide were removed using fasta_pull.py
+	Ha_Strain_NB - collected from 
+	Ha_Strain_3107 (https://ncma.bigelow.org/node/1/strain/CCMP3107)
+
+Bowtie index was built using the Ha_Strain_NB as a reference genome.
+	1. ref_align.py was run on _poly samples.
