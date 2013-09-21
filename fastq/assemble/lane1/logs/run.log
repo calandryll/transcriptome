@@ -1,0 +1,1 @@
+/usr/bin/cuffmerge -o /home/chris/transcriptome/fastq/assemble/lane1 /home/chris/transcriptome/fastq/assemble/lane1.txt

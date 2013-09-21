@@ -1,8 +1,8 @@
-lane2/Sample_1_L002_poly/transcripts.gtf
-lane2/Sample_2_L002_poly/transcripts.gtf
-lane2/Sample_3_L002_poly/transcripts.gtf
-lane2/Sample_4_L002_poly/transcripts.gtf
-lane2/Sample_5_L002_poly/transcripts.gtf
-lane2/Sample_6_L002_poly/transcripts.gtf
-lane2/Sample_7_L002_poly/transcripts.gtf
-lane2/Sample_8_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_1_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_2_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_3_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_4_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_5_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_6_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_7_L002_poly/transcripts.gtf
+/home/chris/transcriptome/fastq/assemble/lane2/Sample_8_L002_poly/transcripts.gtf
