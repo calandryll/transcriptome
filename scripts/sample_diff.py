@@ -17,9 +17,17 @@ input_dir = "/home/chris/transcriptome/fastq/align/"
 
 #cuffdiff merged_asm/merged.gtf liver1.bam,liver2.bam brain1.bam,brain2.bam
 # Pull files from directory
-control_lane1 = sorted(glob.glob(input_dir + "/*/lane1/controls/*"))
+control_lane1 = input_dir + "lane1/controls"
+treat_lane1 = input_dir + "lane1/treat"
+control_lane2 = input_dir + "lane2/controls"
+treat_lane2 = input_dir + "lane2/treat"
 
 print control_lane1
+print treat_lane1
+print control_lane2
+print treat_lane2
 
-
-#os.system("cuffdiff -p 4 -o %s %s %s %s" % (output_dir, merge_lane1, controls, treat))
+print "Analyzing Lane 1..."
+#os.system("cuffdiff -p 4 -o %s/lane1 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s" % (output_dir, merge_lane1, control_lane1, treat_lane1))
+print "Analyzing Lane 2..."
+#os.system("cuffdiff -p 4 -o %s/lane2 %s %s %s" % (output_dir, merge_lane2, control_lane2, treat_lane2))
