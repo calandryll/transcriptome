@@ -5,3 +5,31 @@ Continuation of assembly based on the Bowtie index of Ha_Strain_NB
 	1. assemble.py was run on aligned samples.
 	2. Because CAMERA file was not properly annotated, alignment and assembly will not have proper annotation
 		after assembly and cuffdiff of highest expressed sequences.  Sequences will be annotated using 
+
+Samples were merged for each lane separately, using sample_merge.py
+
+Samples were run for differential expression
+	1. sample_diff.py was on lane 1 and lane 2 samples separately
+
+Processing was done incorrectly.  Samples removed from the large sequence filed and used for index building was all mixture of conditions.
+Individual sequences, with annotations(!) were downloaded from http://camera.calit2.net/mmetsp/list.php 
+
+New Index will be built using MMETSP0415 (NB\415):
+Growth medium	f/2-Si amended seawater
+Modifications to growth medium	f/2 for all nutrients except eliminate Si
+Temperature (ÂºC)	15
+Salinty (psu)	15
+Day portion of day:night cycle in hours	12
+Night portion of day:night cycle in hours	12
+Nitrate (Î¼mol/L)	882
+Phosphate (Î¼mol/L)	36.2
+Silicate (Î¼mol/L)	106
+Investigation type	Eukaryotes
+Other experimental metadata available	not axenic
+
+	1. Annotation used will be pfam.gff3 (Renamed H_akashiwo.gff3) and cds.fa (Renamed H_akashiwo.fa)
+		a. bowtie2-build H_akashiwo.fa H_akashiwo
+	2. Alignments (ref_align.py)
+		a. as before but using -G H_akashiwo.gff3 for gff file
+		b. errors out will try different setup of NT file from 415, instead of cds.fa
+		c. gff3 will be tried with cufflinks options (assemble.py)

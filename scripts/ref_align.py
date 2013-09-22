@@ -9,6 +9,7 @@ import glob
 # Directories for input and output
 input_dir = "/home/chris/transcriptome/fastq/poly"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
+ha_gff = reference + ".gff3"
 output_dir = "/home/chris/transcriptome/fastq/align"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
