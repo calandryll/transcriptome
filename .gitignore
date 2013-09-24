@@ -14,3 +14,4 @@ programs/
 *.bed
 *.fpkm_tracking
 *.gz
+*.7z
