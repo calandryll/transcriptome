@@ -14,6 +14,7 @@ output_dir = "/home/chris/transcriptome/fastq/align"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Directory: %s\n" % (input_dir)
+print "Using %s as a reference..." % (ha_gff)
 print "Scanning Directory..."
 
 # Pull files from directory
@@ -34,4 +35,4 @@ for files in range(trim):
 	# Run tophat using H_akashiwo index
 	# -p 4 threads
 	
-	os.system("tophat -p 4 -o %s %s %s" % (samdir, reference, fastq_files[files]))
+	os.system("tophat -p 4 -o %s %s %s" % (ha_gff, samdir, reference, fastq_files[files]))

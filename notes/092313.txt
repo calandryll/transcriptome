@@ -1,0 +1,8 @@
+09/23/2013
+==========
+
+Kathy finished assembly of transcriptome.  Index and samples will be run using this as a references.
+	1. Filtered_all_091313.fasta to H_akashiwo.fasta
+	2. bowtie2-build H_akashiwo.fasta H_akashiwo
+	3. ref_align.py on samples
+	4. assemble.py
