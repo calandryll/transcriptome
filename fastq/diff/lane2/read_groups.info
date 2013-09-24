@@ -1,0 +1,9 @@
+file	condition	replicate_num	total_mass	norm_mass	internal_scale	external_scale
+/home/chris/transcriptome/fastq/align/lane2/controls/control_1.bam	Control	0	36942.2	4.2292e+06	0.011657	1
+/home/chris/transcriptome/fastq/align/lane2/controls/control_2.bam	Control	1	8.26454e+06	4.2292e+06	1.86484	1
+/home/chris/transcriptome/fastq/align/lane2/controls/control_3.bam	Control	2	7.88885e+06	4.2292e+06	1.79745	1
+/home/chris/transcriptome/fastq/align/lane2/controls/control_4.bam	Control	3	8.21295e+06	4.2292e+06	1.8928	1
+/home/chris/transcriptome/fastq/align/lane2/treat/treat_1.bam	Vibrio	0	9.29005e+06	4.2292e+06	2.22179	1
+/home/chris/transcriptome/fastq/align/lane2/treat/treat_3.bam	Vibrio	1	8.39872e+06	4.2292e+06	2.02254	1
+/home/chris/transcriptome/fastq/align/lane2/treat/treat_3.bam	Vibrio	2	8.39872e+06	4.2292e+06	2.02254	1
+/home/chris/transcriptome/fastq/align/lane2/treat/treat_4.bam	Vibrio	3	7.45647e+06	4.2292e+06	1.48344	1
