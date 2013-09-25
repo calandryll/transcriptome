@@ -7,8 +7,8 @@ import os
 import glob
 
 # Directories for input and output
-input_dir = "/home/chris/transcriptome/fastq/align"
-output_dir = "/home/chris/transcriptome/fastq/assemble"
+input_dir = "/home/chris/transcriptome/fastq/combined/align"
+output_dir = "/home/chris/transcriptome/fastq/combined/assemble"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 ha_gff = reference + ".gff3"
 
@@ -17,8 +17,8 @@ print "Directory: %s\n" % (input_dir)
 print "Scanning Directory..."
 
 # Pull files from directory
-fastq_files = sorted(glob.glob(input_dir + "/*/*/accepted_hits.bam"))
-fastq_dir = sorted(glob.glob(input_dir + "/*/*"))
+fastq_files = sorted(glob.glob(input_dir + "/*/accepted_hits.bam"))
+fastq_dir = sorted(glob.glob(input_dir + "/*"))
 
 trim = len(list(fastq_files))
 for files in range(trim):
@@ -35,5 +35,5 @@ for files in range(trim):
 
 	# Run tophat using H_akashiwo index
 	# -p 4 threads
-	
-	os.system("cufflinks -p 4 -g %s -o %s %s " % (ha_gff, samdir, fastq_files[files]))
+	# try -G
+	os.system("cufflinks -p 4 -G %s -o %s %s " % (ha_gff, samdir, fastq_files[files]))

@@ -1,0 +1,12 @@
+09/25/2013
+==========
+
+Cufflinks run on 092413 was run using -g
+
+	-G/--GTF <reference_annotation.(gtf/gff)>
+			Tells Cufflinks to use the supplied reference annotation (a GFF file) to estimate isoform expression. It will not assemble novel transcripts, and the program will ignore alignments not structurally compatible with any reference transcript.
+	-g/--GTF-guide <reference_annotation.(gtf/gff)>	 
+			Tells Cufflinks to use the supplied reference annotation (GFF) to guide RABT assembly. Reference transcripts will be tiled with faux-reads to provide additional information in assembly. Output will include all reference transcripts as well as any novel genes and isoforms that are assembled.
+
+Samples will be run using -G to examine difference between the two different outputs
+	1. _092513.tar.gz files are from the -g run (completed on 092413)

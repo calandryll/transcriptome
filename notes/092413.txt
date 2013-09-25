@@ -1,0 +1,4 @@
+09/24/2013
+==========
+
+Lanes were merged together, _poly, and run for ref_align.py, assemble.py, sample_merge.py and sample_diff.py

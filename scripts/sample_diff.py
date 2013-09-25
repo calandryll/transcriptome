@@ -9,26 +9,27 @@ import os
 import glob
 
 # Directories
-merge_lane1 = "/home/chris/transcriptome/fastq/merged/lane1/merged.gtf"
-merge_lane2 = "/home/chris/transcriptome/fastq/merged/lane2/merged.gtf"
-output_dir = "/home/chris/transcriptome/fastq/diff/"
-input_dir = "/home/chris/transcriptome/fastq/align/"
+#merge_lane1 = "/home/chris/transcriptome/fastq/merged/lane1/merged.gtf"
+#merge_lane2 = "/home/chris/transcriptome/fastq/merged/lane2/merged.gtf"
+merged = "/home/chris/transcriptome/fastq/combined/merged/merged.gtf"
+output_dir = "/home/chris/transcriptome/fastq/combined/diff/"
+input_dir = "/home/chris/transcriptome/fastq/combined/align/"
 
 
 #cuffdiff merged_asm/merged.gtf liver1.bam,liver2.bam brain1.bam,brain2.bam
 # Pull files from directory
-control_lane1 = input_dir + "lane1/controls"
-treat_lane1 = input_dir + "lane1/treat"
-control_lane2 = input_dir + "lane2/controls"
-treat_lane2 = input_dir + "lane2/treat"
+control_lane = input_dir + "/controls"
+treat_lane = input_dir + "/treat"
+#control_lane2 = input_dir + "lane2/controls"
+#treat_lane2 = input_dir + "lane2/treat"
 
-print control_lane1
-print treat_lane1
-print control_lane2
-print treat_lane2
+print control_lane
+print treat_lane
+#print control_lane2
+#print treat_lane2
 
-print "Analyzing Lane 1..."
-os.system("cuffdiff -p 4 -L Control,Vibrio -o %s/lane1 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merge_lane1, control_lane1, control_lane1, control_lane1, control_lane1, treat_lane1, treat_lane1, treat_lane1, treat_lane1))
-print "Analyzing Lane 2..."
-os.system("cuffdiff -p 4 -L Control,Vibrio -o %s/lane2 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merge_lane2, control_lane2, control_lane2, control_lane2, control_lane2, treat_lane2, treat_lane2, treat_lane2, treat_lane2))
-
+#print "Analyzing Lane 1..."
+#os.system("cuffdiff -p 4 -L Control,Vibrio -o %s/lane1 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merge_lane1, control_lane1, control_lane1, control_lane1, control_lane1, treat_lane1, treat_lane1, treat_lane1, treat_lane1))
+#print "Analyzing Lane 2..."
+#os.system("cuffdiff -p 4 -L Control,Vibrio -o %s/lane2 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merge_lane2, control_lane2, control_lane2, control_lane2, control_lane2, treat_lane2, treat_lane2, treat_lane2, treat_lane2))
+os.system("cuffdiff -p 4 -L Control,Vibrio -o %s %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merged, control_lane, control_lane, control_lane, control_lane, treat_lane, treat_lane, treat_lane, treat_lane))

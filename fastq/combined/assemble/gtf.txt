@@ -1,0 +1,8 @@
+/home/chris/transcriptome/fastq/combined/assemble/Control_1/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Control_2/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Control_3/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Control_4/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Treat_1/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Treat_2/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Treat_3/transcripts.gtf
+/home/chris/transcriptome/fastq/combined/assemble/Treat_4/transcripts.gtf

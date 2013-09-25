@@ -1,0 +1,31 @@
+
+[2013-09-24 14:06:30] Beginning TopHat run (v2.0.6)
+-----------------------------------------------
+[2013-09-24 14:06:30] Checking for Bowtie
+		  Bowtie version:	 2.0.5.0
+[2013-09-24 14:06:30] Checking for Samtools
+		Samtools version:	 0.1.18.0
+[2013-09-24 14:06:30] Checking for Bowtie index files
+[2013-09-24 14:06:30] Checking for reference FASTA file
+	Warning: Could not find FASTA file /home/chris/transcriptome/fastq/reference/H_akashiwo.fa
+[2013-09-24 14:06:30] Reconstituting reference FASTA file from Bowtie index
+  Executing: /usr/bin/bowtie2-inspect /home/chris/transcriptome/fastq/reference/H_akashiwo > /home/chris/transcriptome/fastq/combined/align/Control_4/tmp/H_akashiwo.fa
+[2013-09-24 14:06:33] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
+	format:		 fastq
+	quality scale:	 phred33 (default)
+[2013-09-24 14:06:35] Preparing reads
+	 left reads: min. length=35, max. length=39, 26038870 kept reads (173 discarded)
+Warning: you have only one segment per read.
+	If the read length is greater than or equal to 45bp,
+	we strongly recommend that you decrease --segment-length to about half the read length because TopHat will work better with multiple segments
+[2013-09-24 14:10:47] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2013-09-24 14:18:52] Searching for junctions via segment mapping
+[2013-09-24 14:20:48] Retrieving sequences for splices
+[2013-09-24 14:20:48] Indexing splices
+[2013-09-24 14:20:49] Mapping left_kept_reads_unmapped to genome segment_juncs with Bowtie2 (1/1)
+open: No such file or directory
+Error: bam2fastx failed to open BAM file /home/chris/transcriptome/fastq/combined/align/Control_4/tmp/left_kept_reads_unmapped.bam
+[2013-09-24 14:20:49] Joining segment hits
+[2013-09-24 14:28:32] Reporting output tracks
+-----------------------------------------------
+[2013-09-24 14:38:21] Run complete: 00:31:51 elapsed

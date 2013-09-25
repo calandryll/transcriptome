@@ -7,10 +7,12 @@ import os
 import glob
 
 # Directories for input and output
-input_dir = "/home/chris/transcriptome/fastq/poly"
+#input_dir = "/home/chris/transcriptome/fastq/poly"
+input_dir = "/home/chris/transcriptome/fastq/combined"
+output_dir = "/home/chris/transcriptome/fastq/combined/align"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 ha_gff = reference + ".gff3"
-output_dir = "/home/chris/transcriptome/fastq/align"
+#output_dir = "/home/chris/transcriptome/fastq/align"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Directory: %s\n" % (input_dir)
@@ -18,7 +20,7 @@ print "Using %s as a reference..." % (ha_gff)
 print "Scanning Directory..."
 
 # Pull files from directory
-fastq_files = sorted(glob.glob(input_dir + "/*/*.fastq"))
+fastq_files = sorted(glob.glob(input_dir + "/samples/*.fastq"))
 
 trim = len(list(fastq_files))
 for files in range(trim):
@@ -35,4 +37,4 @@ for files in range(trim):
 	# Run tophat using H_akashiwo index
 	# -p 4 threads
 	
-	os.system("tophat -p 4 -o %s %s %s" % (ha_gff, samdir, reference, fastq_files[files]))
+	os.system("tophat -p 4 -o %s %s %s" % (samdir, reference, fastq_files[files]))
