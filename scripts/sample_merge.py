@@ -11,5 +11,5 @@ output_dir = "/home/chris/transcriptome/fastq/combined/merged"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 ha_gff = reference + ".gff3"
 
-os.system("cuffmerge -o %s %s/gtf.txt" % (output_dir, input_dir))
+os.system("cuffmerge -g %s -o %s %s/gtf.txt" % (ha_gff, output_dir, input_dir))
 #os.system("cuffmerge -o %s/lane2 %s/lane2.txt" % (output_dir, input_dir))
