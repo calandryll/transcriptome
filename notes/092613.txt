@@ -1,0 +1,24 @@
+09/26/13
+========
+
+Original sequence files will be combined and quality control will be carried out again.  Hopefully this will improve the quality and iron out other kinks that may be in the samples.
+	Commands:
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_1_L001.fastq Sample_1_L002.fastq >> Control_1.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_2_L001.fastq Sample_2_L002.fastq >> Control_2.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_3_L001.fastq Sample_3_L002.fastq >> Control_3.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_4_L001.fastq Sample_4_L002.fastq >> Control_4.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_5_L001.fastq Sample_5_L002.fastq >> Treat_1.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_6_L001.fastq Sample_6_L002.fastq >> Treat_2.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_7_L001.fastq Sample_7_L002.fastq >> Treat_3.fastq
+		chris@Amelia ~/transcriptome/fastq/original $ cat Sample_8_L001.fastq Sample_8_L002.fastq >> Treat_4.fastq
+
+On combined samples, removal of adapters and bases with a quality score of 30 or less
+	1. quality_control.py
+		a. removes the 8 adapters as identified by the barcode
+		b. removes bases <30 score
+		c. also removes any sequences <51 bases.
+			i. I am curious how this will affect the number of significant transcripts.
+			ii. cutadapt is the program used
+		d. then removes the first 13 bases
+			i. fastx_trimmer is used for removal of the bases
+		

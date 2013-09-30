@@ -1,0 +1,10 @@
+Clipping Adapter: GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG
+Min. Length: 51
+Input: 182256 reads.
+Output: 145922 reads.
+discarded 34245 too-short reads.
+discarded 1842 adapter-only reads.
+discarded 247 N reads.
+Trimming: base 13 to 0
+Input: 145922 reads.
+Output: 145922 reads.

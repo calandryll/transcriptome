@@ -7,8 +7,8 @@ import os
 import glob
 
 # Directories for input and output
-input_dir = "/home/chris/transcriptome/fastq/combined/align"
-output_dir = "/home/chris/transcriptome/fastq/combined/assemble"
+input_dir = "/home/chris/transcriptome/fastq/align"
+output_dir = "/home/chris/transcriptome/fastq/assemble"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 ha_gff = reference + ".gff3"
 
@@ -36,4 +36,4 @@ for files in range(trim):
 	# Run tophat using H_akashiwo index
 	# -p 4 threads
 	# try -G
-	os.system("cufflinks -p 4 -G %s -o %s %s " % (ha_gff, samdir, fastq_files[files]))
+	os.system("cufflinks -p 4 -o %s %s " % (samdir, fastq_files[files]))

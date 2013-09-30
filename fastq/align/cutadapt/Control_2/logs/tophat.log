@@ -1,0 +1,13 @@
+
+[2013-09-27 10:58:41] Beginning TopHat run (v2.0.6)
+-----------------------------------------------
+[2013-09-27 10:58:41] Checking for Bowtie
+		  Bowtie version:	 2.0.5.0
+[2013-09-27 10:58:41] Checking for Samtools
+		Samtools version:	 0.1.18.0
+[2013-09-27 10:58:41] Checking for Bowtie index files
+[2013-09-27 10:58:41] Checking for reference FASTA file
+	Warning: Could not find FASTA file /home/chris/transcriptome/fastq/reference/H_akashiwo.fa
+[2013-09-27 10:58:41] Reconstituting reference FASTA file from Bowtie index
+  Executing: /usr/bin/bowtie2-inspect /home/chris/transcriptome/fastq/reference/H_akashiwo > /home/chris/transcriptome/fastq/align/Control_2/tmp/H_akashiwo.fa
+[2013-09-27 10:58:41] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo

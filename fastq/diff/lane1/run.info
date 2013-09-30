@@ -1,5 +1,0 @@
-param	value
-cmd_line	cuffdiff -p 4 -L Control,Vibrio -o /home/chris/transcriptome/fastq/diff//lane1 /home/chris/transcriptome/fastq/merged/lane1/merged.gtf /home/chris/transcriptome/fastq/align/lane1/controls/control_1.bam,/home/chris/transcriptome/fastq/align/lane1/controls/control_2.bam,/home/chris/transcriptome/fastq/align/lane1/controls/control_3.bam,/home/chris/transcriptome/fastq/align/lane1/controls/control_4.bam /home/chris/transcriptome/fastq/align/lane1/treat/treat_1.bam,/home/chris/transcriptome/fastq/align/lane1/treat/treat_3.bam,/home/chris/transcriptome/fastq/align/lane1/treat/treat_3.bam,/home/chris/transcriptome/fastq/align/lane1/treat/treat_4.bam 
-version	2.1.1
-SVN_revision	
-boost_version	105300

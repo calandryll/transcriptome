@@ -1,0 +1,4 @@
+09/26/13
+========
+
+Running ref_align.py on using the filtered set of sequences as the reference

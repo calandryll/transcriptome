@@ -1,0 +1,274 @@
+cutadapt version 1.2.1
+Command line parameters: -m 51 -q 30 -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -o /home/chris/transcriptome/fastq/qc/Treat_3.fastq_temp.fastq /home/chris/transcriptome/fastq/original/Treat_3.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 8
+   Processed reads:     33727512
+   Processed bases:   1720103112 bp (1720.1 Mbp)
+     Trimmed reads:       834709 (2.5%)
+   Quality-trimmed:     45100960 bp (12.3 Mbp) (2.62% of total)
+     Trimmed bases:     12342922 bp (12.3 Mbp) (0.72% of total)
+   Too short reads:      3916091 (11.6% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:   2232.90 s
+     Time per read:      0.07 ms
+
+=== Adapter 1 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 675635 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+3	424420	526992.4	0
+4	121094	131748.1	0
+5	16695	32937.0	0
+6	4343	8234.3	0
+7	1475	2058.6	0
+8	1362	514.6	0
+9	2151	128.7	0
+10	1901	32.2	1
+11	1338	8.0	1
+12	884	2.0	1
+13	533	0.5	1
+14	926	0.1	1
+15	529	0.0	1
+16	1778	0.0	1
+17	817	0.0	1
+18	1239	0.0	1
+19	620	0.0	1
+20	1355	0.0	2
+21	886	0.0	2
+22	1034	0.0	2
+23	461	0.0	2
+24	1589	0.0	2
+25	481	0.0	2
+26	1876	0.0	2
+27	851	0.0	2
+28	3309	0.0	2
+29	2043	0.0	2
+30	2743	0.0	3
+31	824	0.0	3
+32	23605	0.0	3
+33	4236	0.0	3
+34	44463	0.0	3
+35	3379	0.0	3
+36	180	0.0	3
+37	5	0.0	3
+38	10	0.0	3
+39	2	0.0	3
+43	1	0.0	4
+44	2	0.0	4
+47	1	0.0	4
+48	2	0.0	4
+49	5	0.0	4
+50	18	0.0	5
+51	169	0.0	5
+
+=== Adapter 2 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 513 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+32	6	0.0	3
+33	2	0.0	3
+34	66	0.0	3
+35	22	0.0	3
+36	77	0.0	3
+37	11	0.0	3
+38	28	0.0	3
+39	4	0.0	3
+41	1	0.0	4
+42	1	0.0	4
+43	2	0.0	4
+44	1	0.0	4
+45	1	0.0	4
+46	11	0.0	4
+47	3	0.0	4
+48	3	0.0	4
+49	7	0.0	4
+50	13	0.0	5
+51	254	0.0	5
+
+=== Adapter 3 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 4216 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+32	874	0.0	3
+33	139	0.0	3
+34	2222	0.0	3
+35	66	0.0	3
+36	75	0.0	3
+37	85	0.0	3
+38	55	0.0	3
+39	20	0.0	3
+40	30	0.0	4
+41	3	0.0	4
+42	8	0.0	4
+43	2	0.0	4
+44	4	0.0	4
+45	8	0.0	4
+46	5	0.0	4
+47	3	0.0	4
+48	10	0.0	4
+49	16	0.0	4
+50	60	0.0	5
+51	531	0.0	5
+
+=== Adapter 4 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 1332 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+33	3	0.0	3
+34	24	0.0	3
+35	5	0.0	3
+36	11	0.0	3
+37	2	0.0	3
+38	3	0.0	3
+39	7	0.0	3
+40	12	0.0	4
+41	11	0.0	4
+42	17	0.0	4
+43	12	0.0	4
+44	13	0.0	4
+45	24	0.0	4
+46	16	0.0	4
+47	19	0.0	4
+48	21	0.0	4
+49	43	0.0	4
+50	113	0.0	5
+51	976	0.0	5
+
+=== Adapter 5 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 41291 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+32	5	0.0	3
+33	2	0.0	3
+34	6	0.0	3
+35	3	0.0	3
+36	20841	0.0	3
+37	6805	0.0	3
+38	13307	0.0	3
+39	1	0.0	3
+40	3	0.0	4
+41	1	0.0	4
+42	2	0.0	4
+44	3	0.0	4
+45	3	0.0	4
+46	8	0.0	4
+47	4	0.0	4
+48	8	0.0	4
+49	9	0.0	4
+50	34	0.0	5
+51	246	0.0	5
+
+=== Adapter 6 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 625 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+32	2	0.0	3
+33	4	0.0	3
+34	35	0.0	3
+35	4	0.0	3
+36	18	0.0	3
+37	1	0.0	3
+38	5	0.0	3
+39	3	0.0	3
+40	6	0.0	4
+41	2	0.0	4
+42	1	0.0	4
+43	6	0.0	4
+44	5	0.0	4
+45	2	0.0	4
+46	3	0.0	4
+47	3	0.0	4
+48	12	0.0	4
+49	20	0.0	4
+50	80	0.0	5
+51	413	0.0	5
+
+=== Adapter 7 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 110942 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+32	2	0.0	3
+33	5	0.0	3
+34	76	0.0	3
+35	129	0.0	3
+36	1953	0.0	3
+37	264	0.0	3
+38	1670	0.0	3
+39	3968	0.0	3
+40	4458	0.0	4
+41	443	0.0	4
+42	627	0.0	4
+43	246	0.0	4
+44	262	0.0	4
+45	344	0.0	4
+46	153	0.0	4
+47	242	0.0	4
+48	460	0.0	4
+49	683	0.0	4
+50	3159	0.0	5
+51	91798	0.0	5
+
+=== Adapter 8 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 155 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences
+length	count	expected	max. errors
+32	1	0.0	3
+34	1	0.0	3
+36	7	0.0	3
+37	6	0.0	3
+38	8	0.0	3
+39	1	0.0	3
+40	3	0.0	4
+42	1	0.0	4
+43	2	0.0	4
+44	1	0.0	4
+45	3	0.0	4
+47	4	0.0	4
+48	1	0.0	4
+49	2	0.0	4
+50	24	0.0	5
+51	90	0.0	5
+
+Trimming: base 13 to 0
+Input: 29811421 reads.
+Output: 29811421 reads.

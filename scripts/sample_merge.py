@@ -6,10 +6,10 @@ import os
 import glob
 
 # Directories for input and output
-input_dir = "/home/chris/transcriptome/fastq/combined/assemble"
-output_dir = "/home/chris/transcriptome/fastq/combined/merged"
+input_dir = "/home/chris/transcriptome/fastq/assemble"
+output_dir = "/home/chris/transcriptome/fastq/merged"
 reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 ha_gff = reference + ".gff3"
 
-os.system("cuffmerge -g %s -o %s %s/gtf.txt" % (ha_gff, output_dir, input_dir))
+os.system("cuffmerge -o %s %s/gtf.txt" % (output_dir, input_dir))
 #os.system("cuffmerge -o %s/lane2 %s/lane2.txt" % (output_dir, input_dir))

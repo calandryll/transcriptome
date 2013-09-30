@@ -1,0 +1,13 @@
+/usr/bin/cuffmerge -o /home/chris/transcriptome/fastq/merged /home/chris/transcriptome/fastq/assemble/gtf.txt
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_1/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filei26doF
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_2/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_file9WcN9Z
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_3/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_file0wf33o
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_4/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileK2jy4R
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_1/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filet2KRhp
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_2/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileR0TcE0
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_3/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileVVCtaG
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_4/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileji3oSp
+sort -k 3,3 -k 4,4n --temporary-directory=/home/chris/transcriptome/fastq/merged/tmp/ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filei26doF /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_file9WcN9Z /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_file0wf33o /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileK2jy4R /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filet2KRhp /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileR0TcE0 /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileVVCtaG /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileji3oSp > /home/chris/transcriptome/fastq/merged/tmp/mergeSam_file9xZPFd
+cufflinks -o /home/chris/transcriptome/fastq/merged/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 1 /home/chris/transcriptome/fastq/merged/tmp/mergeSam_file9xZPFd
+cuffcompare -o tmp_meta_asm -C -G  /home/chris/transcriptome/fastq/merged//transcripts.gtf
+cuffcompare -o tmp_meta_asm -C -G  /home/chris/transcriptome/fastq/merged//merged.gtf

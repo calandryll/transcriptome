@@ -11,9 +11,9 @@ import glob
 # Directories
 #merge_lane1 = "/home/chris/transcriptome/fastq/merged/lane1/merged.gtf"
 #merge_lane2 = "/home/chris/transcriptome/fastq/merged/lane2/merged.gtf"
-merged = "/home/chris/transcriptome/fastq/combined/merged/merged.gtf"
-output_dir = "/home/chris/transcriptome/fastq/combined/diff/"
-input_dir = "/home/chris/transcriptome/fastq/combined/align/"
+merged = "/home/chris/transcriptome/fastq/merged/merged.gtf"
+output_dir = "/home/chris/transcriptome/fastq/diff/"
+input_dir = "/home/chris/transcriptome/fastq/align"
 
 
 #cuffdiff merged_asm/merged.gtf liver1.bam,liver2.bam brain1.bam,brain2.bam
