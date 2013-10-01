@@ -16,7 +16,7 @@ ha_gff = reference + ".gff3"
 
 #print "Raw Directory: %s\n" % (fastq_raw)
 print "Directory: %s\n" % (input_dir)
-print "Using %s as a reference..." % (ha_gff)
+#print "Using %s as a reference..." % (ha_gff)
 print "Scanning Directory..."
 
 # Pull files from directory
