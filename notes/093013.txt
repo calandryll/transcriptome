@@ -1,0 +1,14 @@
+09/30/13
+========
+
+Combined samples were QC using fastx_clipper, using quality_control2.py
+	1. Adapters, only ones indicated by their barcode were removed, sequences <51 bases were discarded
+		a. with cutadapt it is possible to remove the other adapters in the sequences themselves
+	2. The first 13 bases were trimmed using fastx_trimmer
+	3. Samples were then aligned to 091313 Filtered set from Kathy (Named H_akashiwo)
+		a. She sent a newer more recent QC file 092913 that will be run as well to compare between the two reference files
+		b. After comparison of different trimming factors, samples will be aligned and run against newer file
+	4.  ref_align.py was run on fastx_ samples. 
+		a. A comparison between different trimming factors will be examined
+	
+Filtered_092913 was renamed to H_akashiwo and run for ref_align, etc.  fastx will be the first used since galaxy seems to favor that method for QC
