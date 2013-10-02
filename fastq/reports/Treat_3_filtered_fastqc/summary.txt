@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Treat_3_filtered.fastq
+PASS	Per base sequence quality	Treat_3_filtered.fastq
+PASS	Per sequence quality scores	Treat_3_filtered.fastq
+PASS	Per base sequence content	Treat_3_filtered.fastq
+PASS	Per base GC content	Treat_3_filtered.fastq
+PASS	Per sequence GC content	Treat_3_filtered.fastq
+PASS	Per base N content	Treat_3_filtered.fastq
+PASS	Sequence Length Distribution	Treat_3_filtered.fastq
+FAIL	Sequence Duplication Levels	Treat_3_filtered.fastq
+PASS	Overrepresented sequences	Treat_3_filtered.fastq
+WARN	Kmer Content	Treat_3_filtered.fastq

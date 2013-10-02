@@ -1,0 +1,8 @@
+10/01/13
+========
+
+Samples from fastx quality control were further QCed by removing artifacts and low quality filter scores.
+	1. Run quality_control3.py
+		a. removes artifacts from samples
+		b. removes any sequences that have <100% above a Phred score of 20
+	2. Samples will then be aligned and etc against the 092913 reference set

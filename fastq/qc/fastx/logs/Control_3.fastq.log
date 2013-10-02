@@ -8,3 +8,11 @@ discarded 43287 N reads.
 Trimming: base 13 to 0
 Input: 26430491 reads.
 Output: 26430491 reads.
+Quality cut-off: 20
+Minimum percentage: 100
+Input: 26430491 reads.
+Output: 22983654 reads.
+discarded 3446837 (13%) low-quality reads.
+Input: 22983654 reads.
+Output: 22982455 reads.
+discarded 1199 (0%) artifact reads.

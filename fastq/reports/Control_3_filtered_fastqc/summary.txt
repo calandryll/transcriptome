@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Control_3_filtered.fastq
+PASS	Per base sequence quality	Control_3_filtered.fastq
+PASS	Per sequence quality scores	Control_3_filtered.fastq
+PASS	Per base sequence content	Control_3_filtered.fastq
+PASS	Per base GC content	Control_3_filtered.fastq
+PASS	Per sequence GC content	Control_3_filtered.fastq
+PASS	Per base N content	Control_3_filtered.fastq
+PASS	Sequence Length Distribution	Control_3_filtered.fastq
+FAIL	Sequence Duplication Levels	Control_3_filtered.fastq
+PASS	Overrepresented sequences	Control_3_filtered.fastq
+WARN	Kmer Content	Control_3_filtered.fastq

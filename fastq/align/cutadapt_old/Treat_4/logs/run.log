@@ -1,1 +1,0 @@
-/usr/bin/tophat -p 4 -o /home/chris/transcriptome/fastq/align/Treat_4 /home/chris/transcriptome/fastq/reference/H_akashiwo /home/chris/transcriptome/fastq/qc/Treat_4.fastq
