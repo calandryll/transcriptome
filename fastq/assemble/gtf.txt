@@ -1,4 +1,3 @@
-/home/chris/transcriptome/fastq/assemble/Control_1_filtered/transcripts.gtf
 /home/chris/transcriptome/fastq/assemble/Control_2_filtered/transcripts.gtf
 /home/chris/transcriptome/fastq/assemble/Control_3_filtered/transcripts.gtf
 /home/chris/transcriptome/fastq/assemble/Control_4_filtered/transcripts.gtf

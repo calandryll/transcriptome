@@ -1,13 +1,12 @@
 /usr/bin/cuffmerge -o /home/chris/transcriptome/fastq/merged /home/chris/transcriptome/fastq/assemble/gtf.txt
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_1_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileRuBDmx
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_2_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filepGlmiR
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_3_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileK9Ma5f
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_4_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filelfopDJ
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_1_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filemKGQTh
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_2_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileAqZpVU
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_3_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filem1gCKC
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_4_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileV7K6op
-sort -k 3,3 -k 4,4n --temporary-directory=/home/chris/transcriptome/fastq/merged/tmp/ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileRuBDmx /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filepGlmiR /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileK9Ma5f /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filelfopDJ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filemKGQTh /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileAqZpVU /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filem1gCKC /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileV7K6op > /home/chris/transcriptome/fastq/merged/tmp/mergeSam_file9GlZEg
-cufflinks -o /home/chris/transcriptome/fastq/merged/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 1 /home/chris/transcriptome/fastq/merged/tmp/mergeSam_file9GlZEg
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_2_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filej8fBFJ
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_3_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileIXzIR8
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_4_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filej7BBJC
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_1_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filepSRedb
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_2_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filebNmmnO
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_3_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filelPy9ew
+gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_4_filtered/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileE8h5Si
+sort -k 3,3 -k 4,4n --temporary-directory=/home/chris/transcriptome/fastq/merged/tmp/ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filej8fBFJ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileIXzIR8 /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filej7BBJC /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filepSRedb /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filebNmmnO /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filelPy9ew /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileE8h5Si > /home/chris/transcriptome/fastq/merged/tmp/mergeSam_filevhidY9
+cufflinks -o /home/chris/transcriptome/fastq/merged/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 1 /home/chris/transcriptome/fastq/merged/tmp/mergeSam_filevhidY9
 cuffcompare -o tmp_meta_asm -C -G  /home/chris/transcriptome/fastq/merged//transcripts.gtf
 cuffcompare -o tmp_meta_asm -C -G  /home/chris/transcriptome/fastq/merged//merged.gtf
