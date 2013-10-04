@@ -1,0 +1,6 @@
+# Cuffcompare v2.1.1 | Command line was:
+#cuffcompare -i ../assemble/gtf.txt -s ../reference/H_akashiwo.fasta
+#
+
+ Total union super-loci across all input datasets: 14592 
+  (0 multi-transcript, ~1.5 transcripts per locus)
