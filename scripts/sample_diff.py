@@ -32,4 +32,5 @@ print treat_lane
 #os.system("cuffdiff -p 4 -L Control,Vibrio -o %s/lane1 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merge_lane1, control_lane1, control_lane1, control_lane1, control_lane1, treat_lane1, treat_lane1, treat_lane1, treat_lane1))
 #print "Analyzing Lane 2..."
 #os.system("cuffdiff -p 4 -L Control,Vibrio -o %s/lane2 %s %s/control_1.bam,%s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merge_lane2, control_lane2, control_lane2, control_lane2, control_lane2, treat_lane2, treat_lane2, treat_lane2, treat_lane2))
-os.system("cuffdiff -p 4 -L Control,Vibrio -o %s %s %s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_3.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merged, control_lane, control_lane, control_lane, treat_lane, treat_lane, treat_lane, treat_lane))
+os.system("cuffdiff -p 4 -L Control,Vibrio -o %s %s %s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_2.bam,%s/treat_3.bam,%s/treat_4.bam" % (output_dir, merged, control_lane, control_lane, control_lane, treat_lane, treat_lane, treat_lane, treat_lane))
+# Hey idiot double check that shit!
