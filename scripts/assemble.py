@@ -7,13 +7,13 @@ import os
 import glob
 
 # Directories for input and output
-#input_dir = "/home/chris/transcriptome/fastq/align"
-#output_dir = "/home/chris/transcriptome/fastq/assemble"
-#reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
+input_dir = "/home/chris/transcriptome/fastq/align"
+output_dir = "/home/chris/transcriptome/fastq/assemble"
+reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 
-input_dir = "/home/chris/transcriptome/fastq/vchl/align"
-output_dir = "/home/chris/transcriptome/fastq/vchl/assemble"
-reference = "/home/chris/transcriptome/fastq/reference/V_chl"
+#input_dir = "/home/chris/transcriptome/fastq/vchl/align"
+#output_dir = "/home/chris/transcriptome/fastq/vchl/assemble"
+#reference = "/home/chris/transcriptome/fastq/reference/V_chl"
 
 ha_gff = reference + ".gff3"
 

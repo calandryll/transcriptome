@@ -12,9 +12,9 @@ import glob
 #output_dir = "/home/chris/transcriptome/fastq/align"
 #reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 
-input_dir = "/home/chris/transcriptome/fastq/vchl/qc"
-output_dir = "/home/chris/transcriptome/fastq/vchl/align"
-reference = "/home/chris/transcriptome/fastq/reference/V_chl"
+input_dir = "/home/chris/transcriptome/fastq/qc"
+output_dir = "/home/chris/transcriptome/fastq/align"
+reference = "/home/chris/transcriptome/fastq/reference/H_akashiwo"
 
 ha_gff = reference + ".gff3"
 

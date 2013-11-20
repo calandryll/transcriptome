@@ -1,0 +1,13 @@
+11/19/13
+========
+
+H_akashiwo.fasta was clustered using usearch -id 0.9 to remove similar sequences.  ~500 sequences were removed.  Reanalysis of samples will be carried out using this new mapping setup.
+
+Vibrio_3 (treat_4.bam) will be run in the cuffdiff analysis and examined for similarities with controls.  If similar, cuffdiff analysis will be rerun removing treat_4
+
+Ha_cluster.fasta renamed to H_akashiwo.fasta and reference built with bowtie2-build H_akashiwo.fasta H_akashiwo
+
+Control_0 and Vibrio_3 will not be mapped or used for the entire pipeline
+
+18:34 - ref_align.py;assemble.py;sample_merge.py
+

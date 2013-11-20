@@ -1,7 +1,7 @@
 long_spanning_reads v2.0.6 ()
 --------------------------------------------
 Opening /dev/null for reading
-[samopen] SAM header is present: 15299 sequences.
+[samopen] SAM header is present: 14896 sequences.
 Loading reference sequences...
         reference sequences loaded.
 Loading junctions...done

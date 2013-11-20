@@ -4,4 +4,3 @@
 /home/chris/transcriptome/fastq/assemble/Treat_1_filtered/transcripts.gtf
 /home/chris/transcriptome/fastq/assemble/Treat_2_filtered/transcripts.gtf
 /home/chris/transcriptome/fastq/assemble/Treat_3_filtered/transcripts.gtf
-/home/chris/transcriptome/fastq/assemble/Treat_4_filtered/transcripts.gtf
