@@ -15,3 +15,7 @@ programs/
 *.fpkm_tracking
 *.gz
 *.7z
+cuffData.db
+*.diff
+*.xlsx
+*.csv
