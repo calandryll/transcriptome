@@ -1,0 +1,8 @@
+03/17/14
+========
+
+292 conting, Ha CCMP 2393, from the Eukaryotic Mircobial Transcriptome was used for bowtie2-build setup.  This sample was run at normal CO2, nutrient replete, but at a higher level of salinity than this project was run at.
+
+Samples will be mapped to this a reference genome.  ~30,000 contigs, compared to the reference genome Kathy built at ~15,000
+
+treat_4.bam will be removed examination for future runs.

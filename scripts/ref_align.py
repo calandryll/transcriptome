@@ -38,7 +38,7 @@ for files in range(trim):
 	#print fastq_files[files]	
 
 	# Create directory for output
-	#os.system("mkdir %s" % (samdir))
+	os.system("mkdir %s" % (samdir))
 
 	# Run tophat using H_akashiwo index
 	# -p 4 threads

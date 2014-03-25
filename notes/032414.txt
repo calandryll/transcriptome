@@ -1,0 +1,6 @@
+03/24/14
+========
+
+IDBA_tran was used (default settings) to produce a reference genome.  contig_default.fa was created using Control_2_filtered.fastq
+
+H_akashiwo was built using bowtie2-build contig_default.fa
