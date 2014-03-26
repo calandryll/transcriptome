@@ -1,0 +1,61 @@
+03/25/14
+========
+
+Created analysis.py to run all of the steps in one script (minus sample_diff.py)
+
+Reference built using contig_100.fasta
+	Contigs were built using IDBA_tran with a max of 100 kmer
+
+De Novo Assembly
+================
+
+Filtered reads, controls and treatments,  will be concantenated to a single file and be used to create a reference genome for analysis
+
+Trinity Analysis
+	Command: ~/bin/trinityrnaseq/Trinity.pl --seqType fq --JM 24G --single Combined.fastq
+
+chris@Amelia ~/transcriptome/fastq/reference/assembly $ ~/bin/trinityrnaseq/util/TrinityStats.pl trinity/Trinity.fasta 
+
+
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity transcripts:      48365
+Total trinity components:       48336
+Percent GC: 53.26
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+        Contig N10: 863
+        Contig N20: 652
+        Contig N30: 530
+        Contig N40: 446
+        Contig N50: 383
+
+        Median contig length: 301
+        Average contig: 370.26
+        Total assembled bases: 17907416
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per COMPONENT:
+#####################################################
+
+        Contig N10: 863
+        Contig N20: 652
+        Contig N30: 530
+        Contig N40: 446
+        Contig N50: 383
+
+        Median contig length: 301
+        Average contig: 370.22
+        Total assembled bases: 17895023
+
+IDBA_tran
+        Created fa from fastq: ~/bin/idba-1.1.1/bin/fa2fq Combined.fastq Combined.fa
+	Command: 
+
+SOAPdenovoTrans (Used example config from website: http://soap.genomics.org.cn/SOAPdenovo-Trans.html#inst2)
+	Command: 

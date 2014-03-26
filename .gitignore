@@ -1,5 +1,7 @@
 # Don't clone the programs directory
 programs/
+# Don't clone the assembly stuff
+fastq/reference/assembly/
 
 # Ignore certain files
 *.fasta
@@ -19,3 +21,6 @@ cuffData.db
 *.diff
 *.xlsx
 *.csv
+*.finished
+*.read_count
+*.kmer_coun

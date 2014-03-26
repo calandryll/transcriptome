@@ -11,3 +11,13 @@
 	format:		 fastq
 	quality scale:	 phred33 (default)
 [2014-03-25 06:00:17] Preparing reads
+	 left reads: min. length=39, max. length=39, 24207562 kept reads (0 discarded)
+Warning: you have only one segment per read.
+	If the read length is greater than or equal to 45bp,
+	we strongly recommend that you decrease --segment-length to about half the read length because TopHat will work better with multiple segments
+[2014-03-25 06:03:39] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2014-03-25 06:13:43] Searching for junctions via segment mapping
+Warning: junction database is empty!
+[2014-03-25 06:15:52] Reporting output tracks
+-----------------------------------------------
+[2014-03-25 06:24:57] Run complete: 00:24:40 elapsed

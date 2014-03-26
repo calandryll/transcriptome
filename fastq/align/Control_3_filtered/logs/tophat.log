@@ -1,0 +1,23 @@
+
+[2014-03-25 06:24:57] Beginning TopHat run (v2.0.8b)
+-----------------------------------------------
+[2014-03-25 06:24:57] Checking for Bowtie
+		  Bowtie version:	 2.1.0.0
+[2014-03-25 06:24:57] Checking for Samtools
+		Samtools version:	 0.1.19.0
+[2014-03-25 06:24:57] Checking for Bowtie index files
+[2014-03-25 06:24:57] Checking for reference FASTA file
+[2014-03-25 06:24:57] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
+	format:		 fastq
+	quality scale:	 phred33 (default)
+[2014-03-25 06:24:57] Preparing reads
+	 left reads: min. length=39, max. length=39, 22982455 kept reads (0 discarded)
+Warning: you have only one segment per read.
+	If the read length is greater than or equal to 45bp,
+	we strongly recommend that you decrease --segment-length to about half the read length because TopHat will work better with multiple segments
+[2014-03-25 06:28:23] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2014-03-25 06:38:06] Searching for junctions via segment mapping
+Warning: junction database is empty!
+[2014-03-25 06:40:17] Reporting output tracks
+-----------------------------------------------
+[2014-03-25 06:48:42] Run complete: 00:23:44 elapsed
