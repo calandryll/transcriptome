@@ -7,3 +7,10 @@ Short sequences and low expression sequences, as determined by using ~/bin/trini
 Filter Command: ~/bin/trinityrnaseq/util/filter_fasta_by_rsem_values.pl --rsem_output rsem/RSEM.isoforms.results --fasta Trinity.fasta --output Trinity_rsem.fasta -e remove_rsem.fasta -c 10
 
 This removed sequences with <10 FPKM, a cluster analysis will be run on this data as well.
+
+DE Analysis
+===========
+
+Reference index was built using Trinity_rsem_cluster.fasta, normal bowtie2-build parameters
+
+analysis.py was run

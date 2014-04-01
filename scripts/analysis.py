@@ -6,7 +6,7 @@
 # Import OS features to run external programs
 import os
 import glob
-import time
+import datetime
 
 qc_dir = "/home/chris/transcriptome/fastq/qc"
 align_dir = "/home/chris/transcriptome/fastq/align"
@@ -31,7 +31,7 @@ def ref_align():
 	trim = len(list(fastq_files))
 	for files in range(trim):
 		#print fastq_files[files]
-		localtime = time.localtime(time.time()) # Timestap of start
+		localtime = datetime.datetime.now() # Timestap of start
 		print "Start time of analysis: %s" % (localtime)
 		sample_name = os.path.splitext(os.path.basename(fastq_files[files]))[0]
 		print "Analyzing %s..." % (sample_name)
@@ -71,7 +71,7 @@ def assemble():
 	trim = len(list(fastq_files))
 	for files in range(trim):
 		#print fastq_files[files]
-		localtime = time.localtime(time.time()) # Timestap of start
+		localtime = datetime.datetime.now() # Timestap of start
 		print "Start time of analysis: %s" % (localtime)
 		sample_name = os.path.splitext(os.path.basename(fastq_files[files]))[0]
 		dir_name = os.path.splitext(os.path.basename(fastq_dir[files]))[0]
@@ -89,12 +89,12 @@ def assemble():
 		os.system("cufflinks -p 4 -o %s %s " % (samdir, fastq_files[files]))
 
 def merge():
-	localtime = time.localtime(time.time()) # Timestap of start
+	localtime = datetime.datetime.now() # Timestap of start
 	print "Start time of analysis: %s" % (localtime)
 	os.system("cuffmerge -o %s %s/gtf.txt" % (merge_dir, assem_dir))
 
 def diff():
-	localtime = time.localtime(time.time()) # Timestap of start
+	localtime = datetime.datetime.now() # Timestap of start
 	print "Start time of analysis: %s" % (localtime)
 	control_lane = align_dir + "/controls"
 	treat_lane = align_dir + "/treat"

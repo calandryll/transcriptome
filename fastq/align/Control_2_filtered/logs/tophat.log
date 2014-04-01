@@ -1,0 +1,15 @@
+
+[2014-04-01 13:20:07] Beginning TopHat run (v2.0.8b)
+-----------------------------------------------
+[2014-04-01 13:20:07] Checking for Bowtie
+		  Bowtie version:	 2.1.0.0
+[2014-04-01 13:20:07] Checking for Samtools
+		Samtools version:	 0.1.19.0
+[2014-04-01 13:20:07] Checking for Bowtie index files
+[2014-04-01 13:20:07] Checking for reference FASTA file
+[2014-04-01 13:20:07] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
+	format:		 fastq
+	quality scale:	 phred33 (default)
+[2014-04-01 13:20:07] Preparing reads
+	 left reads: min. length=39, max. length=39, 24207562 kept reads (0 discarded)
+[2014-04-01 13:23:26] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
