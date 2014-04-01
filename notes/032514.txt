@@ -55,7 +55,17 @@ Stats based on ALL transcript contigs:
 
 IDBA_tran
         Created fa from fastq: ~/bin/idba-1.1.1/bin/fa2fq Combined.fastq Combined.fa
-	Command: 
+	Command: ~/bin/idba-1.1.1/bin/idba_tran -r Combined.fastq -o idba
+        Default values were used
+
+kmer 60
+kmers 23629126 23500776
+merge bubble 4
+contigs: 117126 n50: 287 max: 5415 mean: 247 total length: 28941809 n80: 157
+contigs: 114659 n50: 292 max: 5415 mean: 250 total length: 28738322 n80: 159
+contigs: 35376 n50: 545 max: 5710 mean: 532 total length: 18852927 n80: 379
+aligned 71225040 reads
+confirmed bases: 17893754 correct reads: 63605542 bases: 38078
 
 SOAPdenovoTrans (Used example config from website: http://soap.genomics.org.cn/SOAPdenovo-Trans.html#inst2)
-	Command: 
+	Command: ~/bin/SOAPdenovo-Trans-31mer all -s ../SOAP.config -o soap

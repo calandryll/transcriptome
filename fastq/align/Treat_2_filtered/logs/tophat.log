@@ -1,23 +1,26 @@
 
-[2014-03-25 07:41:00] Beginning TopHat run (v2.0.8b)
+[2014-03-26 20:21:29] Beginning TopHat run (v2.0.8b)
 -----------------------------------------------
-[2014-03-25 07:41:00] Checking for Bowtie
+[2014-03-26 20:21:29] Checking for Bowtie
 		  Bowtie version:	 2.1.0.0
-[2014-03-25 07:41:00] Checking for Samtools
+[2014-03-26 20:21:29] Checking for Samtools
 		Samtools version:	 0.1.19.0
-[2014-03-25 07:41:00] Checking for Bowtie index files
-[2014-03-25 07:41:00] Checking for reference FASTA file
-[2014-03-25 07:41:00] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
+[2014-03-26 20:21:29] Checking for Bowtie index files
+[2014-03-26 20:21:29] Checking for reference FASTA file
+[2014-03-26 20:21:29] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
 	format:		 fastq
 	quality scale:	 phred33 (default)
-[2014-03-25 07:41:00] Preparing reads
+[2014-03-26 20:21:31] Preparing reads
 	 left reads: min. length=39, max. length=39, 34020865 kept reads (0 discarded)
-Warning: you have only one segment per read.
-	If the read length is greater than or equal to 45bp,
-	we strongly recommend that you decrease --segment-length to about half the read length because TopHat will work better with multiple segments
-[2014-03-25 07:45:56] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
-[2014-03-25 07:57:47] Searching for junctions via segment mapping
-Warning: junction database is empty!
-[2014-03-25 08:00:52] Reporting output tracks
+[2014-03-26 20:26:28] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2014-03-26 20:43:03] Mapping left_kept_reads_seg1 to genome H_akashiwo with Bowtie2 (1/2)
+[2014-03-26 20:46:22] Mapping left_kept_reads_seg2 to genome H_akashiwo with Bowtie2 (2/2)
+[2014-03-26 20:49:36] Searching for junctions via segment mapping
+[2014-03-26 20:54:58] Retrieving sequences for splices
+[2014-03-26 20:55:00] Indexing splices
+[2014-03-26 20:55:06] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2014-03-26 20:56:57] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2014-03-26 20:58:27] Joining segment hits
+[2014-03-26 20:59:32] Reporting output tracks
 -----------------------------------------------
-[2014-03-25 08:11:17] Run complete: 00:30:16 elapsed
+[2014-03-26 21:11:29] Run complete: 00:50:00 elapsed

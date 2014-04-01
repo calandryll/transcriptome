@@ -1,0 +1,9 @@
+04/01/14
+========
+
+Short sequences and low expression sequences, as determined by using ~/bin/trinityrnaseq/util/RSEM_util/run_RSEM_align_n_estimate.pl --transcripts Trinity.fasta --seqType fq --single ../Combined.fastq --output rsem
+ followed by filter_fasta_by_rsem_values.pl, will be re-run using the analysis to determine significant DE sequences.
+
+Filter Command: ~/bin/trinityrnaseq/util/filter_fasta_by_rsem_values.pl --rsem_output rsem/RSEM.isoforms.results --fasta Trinity.fasta --output Trinity_rsem.fasta -e remove_rsem.fasta -c 10
+
+This removed sequences with <10 FPKM, a cluster analysis will be run on this data as well.

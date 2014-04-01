@@ -1,0 +1,18 @@
+03/26/14
+========
+
+Reference sequences will be clustered to remove highly similar sequences and any other possible artifacts
+	Command: usearch7 -cluster_fast Trinity_ref.fasta -id 0.9 -consout Trinity_cluster.fasta -uc clusters.uc
+
+Cluster files were cleaned up removing centroid= and ;seqs=#;
+
+There are several smaller contigs ~40bp in length in both SOAP files.  These will not be tested for DE analysis
+
+DE Analysis
+===========
+
+Trinity_cluster and IDBA_cluster will be used as reference genomes for analysis and comparison
+	bowtie2-build *_cluster.fasta H_akashiwo
+
+--segment-length 18 was added to tophat command to remove Warning: you have only one segment per read.
+	It may be beneficial to re-run analysis with Kathy's fasta as a reference with this new setting
