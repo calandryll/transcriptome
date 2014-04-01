@@ -1,5 +1,0 @@
-param	value
-cmd_line	cuffdiff --max-bundle-frags 2000000 -p 4 -L Control,Vibrio -o /home/chris/transcriptome/fastq/diff/ /home/chris/transcriptome/fastq/merged/merged.gtf /home/chris/transcriptome/fastq/align/controls/control_2.bam,/home/chris/transcriptome/fastq/align/controls/control_3.bam,/home/chris/transcriptome/fastq/align/controls/control_4.bam /home/chris/transcriptome/fastq/align/treat/treat_1.bam,/home/chris/transcriptome/fastq/align/treat/treat_2.bam,/home/chris/transcriptome/fastq/align/treat/treat_3.bam 
-version	2.1.1
-SVN_revision	
-boost_version	105300
