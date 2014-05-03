@@ -1,6 +1,5 @@
 #!/usr/bin/python -tt
 # Run all of the steps in a single script
-# Update on: 032614
 # Next revision will include interactive steps for input of data (perhaps)
 
 # Import OS features to run external programs
@@ -106,7 +105,11 @@ def diff():
 	# Removed treat_4.bam - maybe a bit off
 	# HIDATA means too many fragments, will add --max-bundle-frags 2000000
 
+def cummeRbund():
+	os.system("Rscript fastq/cummerbund_analysis.r")
+
 ref_align()
 assemble()
 merge()
 diff()
+cummeRbund()

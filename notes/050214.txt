@@ -1,0 +1,12 @@
+05/02/14
+========
+
+Cluster files were cleaned up removing centroid= and ;seqs=#;
+
+DE Analysis
+===========
+
+Trinity_rsem_cluster.fasta (5/2/14) was renamed to H_akashiwo.fasta
+	bowtie2-build H_akashiwo.fasta H_akashiwo
+
+analysis.py was run 

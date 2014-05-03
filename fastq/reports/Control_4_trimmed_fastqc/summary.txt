@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Control_4_trimmed.fastq
+PASS	Per base sequence quality	Control_4_trimmed.fastq
+PASS	Per sequence quality scores	Control_4_trimmed.fastq
+FAIL	Per base sequence content	Control_4_trimmed.fastq
+FAIL	Per base GC content	Control_4_trimmed.fastq
+PASS	Per sequence GC content	Control_4_trimmed.fastq
+PASS	Per base N content	Control_4_trimmed.fastq
+PASS	Sequence Length Distribution	Control_4_trimmed.fastq
+FAIL	Sequence Duplication Levels	Control_4_trimmed.fastq
+PASS	Overrepresented sequences	Control_4_trimmed.fastq
+WARN	Kmer Content	Control_4_trimmed.fastq

@@ -1,0 +1,57 @@
+04/30/14
+========
+
+After learning of bias in Illumina sequences (Hansen et al 2010, Nucleic Acid Research), samples were trimmed using trimmomatic (qc.py) of adapter sequences
+
+Trimmed files were concatenated and used to reproduce a reference genome
+	~/bin/trinityrnaseq/Trinity.pl --seqType fq -JM 24G --single ~/transcriptome/fastq/qc/Iron_attach_trimmed.fastq
+
+chris@Amelia ~/transcriptome/fastq/reference/assembly $ ~/bin/trinityrnaseq/util/TrinityStats.pl trinity_out_dir/Trinity.fasta 
+
+
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity transcripts:      73109
+Total trinity components:       64200
+Percent GC: 53.66
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+        Contig N10: 2306
+        Contig N20: 1689
+        Contig N30: 1338
+        Contig N40: 1085
+        Contig N50: 868
+
+        Median contig length: 401
+        Average contig: 618.04
+        Total assembled bases: 45184489
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per COMPONENT:
+#####################################################
+
+        Contig N10: 2163
+        Contig N20: 1591
+        Contig N30: 1268
+        Contig N40: 1028
+        Contig N50: 815
+
+        Median contig length: 384
+        Average contig: 590.54
+        Total assembled bases: 37912775
+
+
+Short sequences and low expression sequences, as determined by using ~/bin/trinityrnaseq/util/RSEM_util/run_RSEM_align_n_estimate.pl --transcripts Trinity.fasta --seqType fq --single ~/transcriptome/fastq/qc/Iron_attach_trimmed.fastq --output rsem
+ followed by filter_fasta_by_rsem_values.pl, will be re-run using the analysis to determine significant DE sequences.
+
+Filter Command: ~/bin/trinityrnaseq/util/filter_fasta_by_rsem_values.pl --rsem_output rsem/RSEM.isoforms.results --fasta Trinity.fasta --output Trinity_rsem.fasta -e remove_rsem.fasta -c 10
+
+This removed sequences with <10 FPKM, a cluster analysis will be run on this data as well.
+
+Reference sequences will be clustered to remove highly similar sequences and any other possible artifacts
+	Command: usearch7 -cluster_fast Trinity_rsem.fasta -id 0.9 -consout Trinity_rsem_cluster.fasta -uc clusters.uc

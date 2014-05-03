@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Iron_attach_trimmed.fastq
+PASS	Per base sequence quality	Iron_attach_trimmed.fastq
+PASS	Per sequence quality scores	Iron_attach_trimmed.fastq
+FAIL	Per base sequence content	Iron_attach_trimmed.fastq
+FAIL	Per base GC content	Iron_attach_trimmed.fastq
+PASS	Per sequence GC content	Iron_attach_trimmed.fastq
+PASS	Per base N content	Iron_attach_trimmed.fastq
+PASS	Sequence Length Distribution	Iron_attach_trimmed.fastq
+FAIL	Sequence Duplication Levels	Iron_attach_trimmed.fastq
+PASS	Overrepresented sequences	Iron_attach_trimmed.fastq
+WARN	Kmer Content	Iron_attach_trimmed.fastq

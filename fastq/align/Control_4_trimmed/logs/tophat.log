@@ -1,0 +1,29 @@
+
+[2014-05-02 07:20:51] Beginning TopHat run (v2.0.8b)
+-----------------------------------------------
+[2014-05-02 07:20:51] Checking for Bowtie
+		  Bowtie version:	 2.1.0.0
+[2014-05-02 07:20:51] Checking for Samtools
+		Samtools version:	 0.1.19.0
+[2014-05-02 07:20:51] Checking for Bowtie index files
+[2014-05-02 07:20:51] Checking for reference FASTA file
+	Warning: Could not find FASTA file /home/chris/transcriptome/fastq/reference/H_akashiwo.fa
+[2014-05-02 07:20:51] Reconstituting reference FASTA file from Bowtie index
+  Executing: /usr/bin/bowtie2-inspect /home/chris/transcriptome/fastq/reference/H_akashiwo > /home/chris/transcriptome/fastq/align/Control_4_trimmed/tmp/H_akashiwo.fa
+[2014-05-02 07:20:52] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
+	format:		 fastq
+	quality scale:	 phred33 (default)
+[2014-05-02 07:20:52] Preparing reads
+	 left reads: min. length=51, max. length=51, 32499232 kept reads (8946 discarded)
+[2014-05-02 07:26:15] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2014-05-02 07:45:29] Mapping left_kept_reads_seg1 to genome H_akashiwo with Bowtie2 (1/2)
+[2014-05-02 07:48:35] Mapping left_kept_reads_seg2 to genome H_akashiwo with Bowtie2 (2/2)
+[2014-05-02 07:52:59] Searching for junctions via segment mapping
+[2014-05-02 07:59:20] Retrieving sequences for splices
+[2014-05-02 07:59:21] Indexing splices
+[2014-05-02 07:59:28] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2014-05-02 08:01:02] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2014-05-02 08:02:58] Joining segment hits
+[2014-05-02 08:04:07] Reporting output tracks
+-----------------------------------------------
+[2014-05-02 08:16:28] Run complete: 00:55:36 elapsed

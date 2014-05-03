@@ -1,0 +1,28 @@
+long_spanning_reads v2.0.8b ()
+--------------------------------------------
+Opening /dev/null for reading
+[samopen] SAM header is present: 12698 sequences.
+Loading reference sequences...
+        reference sequences loaded.
+Loading junctions...done
+Loading deletions...done
+Loading insertions...done
+Warning: 8499492 malformed closure
+Warning: 8499492 malformed closure
+Warning: 9155539 malformed closure
+Warning: 17253866 malformed closure
+Warning: 10039033 malformed closure
+Warning: 10044381 malformed closure
+Warning: 26797566 malformed closure
+Warning: 26815027 malformed closure
+Warning: 3882583 malformed closure
+Warning: 28803650 malformed closure
+Warning: 29608076 malformed closure
+Warning: 29608076 malformed closure
+Warning: 14278336 malformed closure
+Warning: 22464328 malformed closure
+Warning: 23256276 malformed closure
+Warning: 7194019 malformed closure
+Warning: 7359804 malformed closure
+Warning: 32099351 malformed closure
+Warning: 23973261 malformed closure
