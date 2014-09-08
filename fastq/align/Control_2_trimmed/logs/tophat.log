@@ -9,3 +9,17 @@
 [2014-09-08 12:47:53] Checking for reference FASTA file
 [2014-09-08 12:47:53] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
 [2014-09-08 12:47:53] Preparing reads
+	 left reads: min. length=51, max. length=51, 32487142 kept reads (8344 discarded)
+[2014-09-08 12:52:59] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2014-09-08 13:09:13] Mapping left_kept_reads_seg1 to genome H_akashiwo with Bowtie2 (1/2)
+[2014-09-08 13:11:21] Mapping left_kept_reads_seg2 to genome H_akashiwo with Bowtie2 (2/2)
+[2014-09-08 13:14:44] Searching for junctions via segment mapping
+[2014-09-08 13:20:18] Retrieving sequences for splices
+[2014-09-08 13:20:19] Indexing splices
+[2014-09-08 13:20:23] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2014-09-08 13:21:36] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2014-09-08 13:23:03] Joining segment hits
+[2014-09-08 13:24:02] Reporting output tracks
+-----------------------------------------------
+[2014-09-08 13:36:01] A summary of the alignment counts can be found in /home/chris/transcriptome/fastq/align/Control_2_trimmed/align_summary.txt
+[2014-09-08 13:36:01] Run complete: 00:48:07 elapsed

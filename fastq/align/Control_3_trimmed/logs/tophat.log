@@ -1,0 +1,25 @@
+
+[2014-09-08 13:36:01] Beginning TopHat run (v2.0.12)
+-----------------------------------------------
+[2014-09-08 13:36:01] Checking for Bowtie
+		  Bowtie version:	 2.2.3.0
+[2014-09-08 13:36:01] Checking for Samtools
+		Samtools version:	 0.1.19.0
+[2014-09-08 13:36:01] Checking for Bowtie index files (genome)..
+[2014-09-08 13:36:01] Checking for reference FASTA file
+[2014-09-08 13:36:01] Generating SAM header for /home/chris/transcriptome/fastq/reference/H_akashiwo
+[2014-09-08 13:36:01] Preparing reads
+	 left reads: min. length=51, max. length=51, 30792817 kept reads (8189 discarded)
+[2014-09-08 13:40:54] Mapping left_kept_reads to genome H_akashiwo with Bowtie2 
+[2014-09-08 13:56:32] Mapping left_kept_reads_seg1 to genome H_akashiwo with Bowtie2 (1/2)
+[2014-09-08 13:59:12] Mapping left_kept_reads_seg2 to genome H_akashiwo with Bowtie2 (2/2)
+[2014-09-08 14:02:44] Searching for junctions via segment mapping
+[2014-09-08 14:08:19] Retrieving sequences for splices
+[2014-09-08 14:08:21] Indexing splices
+[2014-09-08 14:08:26] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2014-09-08 14:09:47] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2014-09-08 14:11:17] Joining segment hits
+[2014-09-08 14:12:19] Reporting output tracks
+-----------------------------------------------
+[2014-09-08 14:23:45] A summary of the alignment counts can be found in /home/chris/transcriptome/fastq/align/Control_3_trimmed/align_summary.txt
+[2014-09-08 14:23:45] Run complete: 00:47:44 elapsed

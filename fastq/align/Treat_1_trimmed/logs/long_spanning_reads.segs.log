@@ -1,0 +1,52 @@
+long_spanning_reads v2.0.12 (4238:4275M)
+--------------------------------------------
+Opening /dev/null for reading
+[samopen] SAM header is present: 12698 sequences.
+Loading reference sequences...
+        reference sequences loaded.
+Loading junctions...done
+Loading deletions...done
+Loading insertions...done
+Warning: 55297 malformed closure
+Warning: 287100 malformed closure
+Warning: 28090622 malformed closure
+Warning: 28090622 malformed closure
+Warning: 18968306 malformed closure
+Warning: 741381 malformed closure
+Warning: 741381 malformed closure
+Warning: 741381 malformed closure
+Warning: 11068701 malformed closure
+Warning: 20338647 malformed closure
+Warning: 2078712 malformed closure
+Warning: 30393029 malformed closure
+Warning: 30393029 malformed closure
+Warning: 21300368 malformed closure
+Warning: 3842978 malformed closure
+Warning: 31546611 malformed closure
+Warning: 13280535 malformed closure
+Warning: 31795176 malformed closure
+Warning: 32027868 malformed closure
+Warning: 4655249 malformed closure
+Warning: 5682127 malformed closure
+Warning: 24053727 malformed closure
+Warning: 24053727 malformed closure
+Warning: 24053727 malformed closure
+Warning: 24115388 malformed closure
+Warning: 24115388 malformed closure
+Warning: 24182944 malformed closure
+Warning: 24182944 malformed closure
+Warning: 24182944 malformed closure
+Warning: 5853091 malformed closure
+Warning: 34240045 malformed closure
+Warning: 34437828 malformed closure
+Warning: 26021800 malformed closure
+Warning: 26021800 malformed closure
+Warning: 17219669 malformed closure
+Warning: 35657956 malformed closure
+Warning: 35657956 malformed closure
+Warning: 36083386 malformed closure
+Warning: 26868920 malformed closure
+Warning: 27032460 malformed closure
+Warning: 27134799 malformed closure
+Warning: 9077942 malformed closure
+Warning: 9077942 malformed closure

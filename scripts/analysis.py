@@ -51,12 +51,12 @@ def ref_align():
 
 	# Copy accepted hits for DE analysis
 	print "Copying accepted_hits.bam to proper directories..."
-	os.system("cp %s/Control_2_filtered/accepted_hits.bam %s/controls/control_2.bam" % (align_dir, align_dir))
-	os.system("cp %s/Control_3_filtered/accepted_hits.bam %s/controls/control_3.bam" % (align_dir, align_dir))
-	os.system("cp %s/Control_4_filtered/accepted_hits.bam %s/controls/control_4.bam" % (align_dir, align_dir))
-	os.system("cp %s/Treat_1_filtered/accepted_hits.bam %s/treat/treat_1.bam" % (align_dir, align_dir))
-	os.system("cp %s/Treat_2_filtered/accepted_hits.bam %s/treat/treat_2.bam" % (align_dir, align_dir))
-	os.system("cp %s/Treat_3_filtered/accepted_hits.bam %s/treat/treat_3.bam" % (align_dir, align_dir))
+	os.system("cp %s/Control_2_trimmed/accepted_hits.bam %s/controls/control_2.bam" % (align_dir, align_dir))
+	os.system("cp %s/Control_3_trimmed/accepted_hits.bam %s/controls/control_3.bam" % (align_dir, align_dir))
+	os.system("cp %s/Control_4_trimmed/accepted_hits.bam %s/controls/control_4.bam" % (align_dir, align_dir))
+	os.system("cp %s/Treat_1_trimmed/accepted_hits.bam %s/treat/treat_1.bam" % (align_dir, align_dir))
+	os.system("cp %s/Treat_2_trimmed/accepted_hits.bam %s/treat/treat_2.bam" % (align_dir, align_dir))
+	os.system("cp %s/Treat_3_trimmed/accepted_hits.bam %s/treat/treat_3.bam" % (align_dir, align_dir))
 
 	
 def assemble():
