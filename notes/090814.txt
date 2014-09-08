@@ -1,0 +1,6 @@
+09/08/14
+========
+
+Re-running analysis for transcriptome due to several repeated sequences and errors in the diff file.  Re-mapping, assembly and diff will be done.
+
+All programs also updated to current versions - Tophat - 2.0.12, Bowtie - 2.2.3.0, Cufflinks - 2.2.1
