@@ -2,6 +2,9 @@
 programs/
 # Don't clone the assembly stuff
 fastq/reference/assembly/
+fastq/rsem/
+#Don't clone diff data
+fastq/diff/
 
 # Ignore certain files
 *.fasta
