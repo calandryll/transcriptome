@@ -45,7 +45,7 @@ def ref_align():
 		# run tophat using H_akashiwo index
 		# -p 4 threads
 		# Segment length changed to half of fragments, to appease warning
-		os.system("tophat -p 4 --segment-length 19 -o %s %s %s" % (samdir, reference, fastq_files[files]))
+		os.system("~/bin/tophat-2.0.12/tophat -p 4 --segment-length 19 -o %s %s %s" % (samdir, reference, fastq_files[files]))
 
 	# Copy accepted hits for DE analysis
 	print "Copying accepted_hits.bam to proper directories..."
@@ -85,12 +85,12 @@ def assemble():
 		# Run tophat using H_akashiwo index
 		# -p 4 threads
 		# try -G
-		os.system("cufflinks -p 4 -o %s %s " % (samdir, fastq_files[files]))
+		os.system("~/bin/cufflinks-2.2.1/cufflinks -p 4 -o %s %s " % (samdir, fastq_files[files]))
 
 def merge():
 	localtime = datetime.datetime.now() # Timestap of start
 	print "Start time of analysis: %s" % (localtime)
-	os.system("cuffmerge -o %s %s/gtf.txt" % (merge_dir, assem_dir))
+	os.system("~/bin/cufflinks-2.2.1/cuffmerge -o %s %s/gtf.txt" % (merge_dir, assem_dir))
 
 def diff():
 	localtime = datetime.datetime.now() # Timestap of start
@@ -100,7 +100,7 @@ def diff():
 
 	#print control_lane
 	#print treat_lane
-	os.system("cuffdiff --max-bundle-frags 2000000 -p 4 -L Control,Vibrio -o %s %s %s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_2.bam,%s/treat_3.bam" % (diff_dir, merged, control_lane, control_lane, control_lane, treat_lane, treat_lane, treat_lane))
+	os.system("~/bin/cufflinks-2.2.1/cuffdiff --max-bundle-frags 2000000 -p 4 -L Control,Vibrio -o %s %s %s/control_2.bam,%s/control_3.bam,%s/control_4.bam %s/treat_1.bam,%s/treat_2.bam,%s/treat_3.bam" % (diff_dir, merged, control_lane, control_lane, control_lane, treat_lane, treat_lane, treat_lane))
 	# Hey idiot double check that shit!
 	# Removed treat_4.bam - maybe a bit off
 	# HIDATA means too many fragments, will add --max-bundle-frags 2000000
