@@ -47,7 +47,7 @@ def ref_align():
 		# Segment length changed to half of fragments, to appease warning
 		# 090814 - removed --segment-length 19 since reads are on avg now 51 bp
 		# 090814 - added logfile output
-		os.system("~/bin/tophat-2.0.12/tophat -p 4 -o %s %s %s >> ~/transcriptome/align/logs/log.txt" % (samdir, reference, fastq_files[files]))
+		os.system("~/bin/tophat-2.0.12/tophat -p 4 -o %s %s %s" % (samdir, reference, fastq_files[files]))
 
 	# Copy accepted hits for DE analysis
 	print "Copying accepted_hits.bam to proper directories..."
@@ -87,7 +87,7 @@ def assemble():
 		# Run tophat using H_akashiwo index
 		# -p 4 threads
 		# try -G
-		os.system("~/bin/cufflinks-2.2.1/cufflinks -p 4 -o %s %s >> ~/transcriptome/assemble/logs/log.txt" % (samdir, fastq_files[files]))
+		os.system("~/bin/cufflinks-2.2.1/cufflinks -p 4 -o %s %s" % (samdir, fastq_files[files]))
 
 def merge():
 	localtime = datetime.datetime.now() # Timestap of start

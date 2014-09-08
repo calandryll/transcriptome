@@ -1,0 +1,65 @@
+09/02/14
+========
+
+Samples were run with RSEM and then DE to populate the trinotate database.
+
+command used: ~/bin/trinityrnaseq/util/align_and_estimate_abundance.pl --transcripts H_akashiwo.fasta --seqType fq --single ../qc/[sample].fastq  --est_method RSEM --aln_method bowtie2 --trinity_mode --output_dir samples/ --output_prefix [sample]
+
+Control - 3:
+[samopen] SAM header is present: 12698 sequences.
+30801006 reads; of these:
+  30801006 (100.00%) were unpaired; of these:
+    6994930 (22.71%) aligned 0 times
+    22135627 (71.87%) aligned exactly 1 time
+    1670449 (5.42%) aligned >1 times
+77.29% overall alignment rate
+CMD: touch Control_3_.bowtie2.bam.ok
+
+Control - 4:
+[samopen] SAM header is present: 12698 sequences.
+32508178 reads; of these:
+  32508178 (100.00%) were unpaired; of these:
+    7336404 (22.57%) aligned 0 times
+    23401238 (71.99%) aligned exactly 1 time
+    1770536 (5.45%) aligned >1 times
+77.43% overall alignment rate
+CMD: touch Control_4_.bowtie2.bam.ok
+
+Treatment - 1:
+[samopen] SAM header is present: 12698 sequences.
+36787208 reads; of these:
+  36787208 (100.00%) were unpaired; of these:
+    8848539 (24.05%) aligned 0 times
+    25947309 (70.53%) aligned exactly 1 time
+    1991360 (5.41%) aligned >1 times
+75.95% overall alignment rate
+CMD: touch Treat_1_.bowtie2.bam.ok
+
+Treatment - 2:
+[samopen] SAM header is present: 12698 sequences.
+45580422 reads; of these:
+  45580422 (100.00%) were unpaired; of these:
+    10989387 (24.11%) aligned 0 times
+    32216882 (70.68%) aligned exactly 1 time
+    2374153 (5.21%) aligned >1 times
+75.89% overall alignment rate
+CMD: touch Treat_2_.bowtie2.bam.ok
+
+Treatment - 3:
+[samopen] SAM header is present: 12698 sequences.
+33457398 reads; of these:
+  33457398 (100.00%) were unpaired; of these:
+    8262580 (24.70%) aligned 0 times
+    23441659 (70.06%) aligned exactly 1 time
+    1753159 (5.24%) aligned >1 times
+75.30% overall alignment rate
+CMD: touch Treat_3_.bowtie2.bam.ok
+
+
+~/bin/trinityrnaseq/util/abundance_estimates_to_matrix.pl --est_method RSEM  --out_prefix Trinity_iso Control_2_RSEM.isoforms.results Control_3_.isoforms.results Control_4_.isoforms.results Treat_1_.isoforms.results Treat_2_.isoforms.results Treat_3_.isoforms.results
+
+~/bin/trinityrnaseq/util/abundance_estimates_to_matrix.pl --est_method RSEM  --out_prefix Trinity_iso Control_2_RSEM.genes.results Control_3_.genes.results Control_4_.genes.results Treat_1_.genes.results Treat_2_.genes.results Treat_3_.genes.results
+
+~/bin/trinityrnaseq/Analysis/DifferentialExpression/run_DE_analysis.pl --matrix Trinity_iso.counts.matrix --method edgeR --samples_file samples_described.txt
+
+~/bin/trinityrnaseq/Analysis/DifferentialExpression/analyze_diff_expr.pl --matrix Trinity_iso.TMM.fpkm.matrix --samples samples_described.txt

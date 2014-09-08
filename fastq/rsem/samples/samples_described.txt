@@ -1,0 +1,6 @@
+conditionA	Control_1
+conditionA	Control_2
+conditionA	Control_3
+conditionB	Treat_1
+conditionB	Treat_2
+conditionB	Treat_3

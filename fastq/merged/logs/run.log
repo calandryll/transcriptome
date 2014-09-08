@@ -1,11 +1,1 @@
-/usr/bin/cuffmerge -o /home/chris/transcriptome/fastq/merged /home/chris/transcriptome/fastq/assemble/gtf.txt
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_2_trimmed/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileMnabQb
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_3_trimmed/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filegaWLpy
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Control_4_trimmed/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filePWH4vY
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_1_trimmed/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileN3Ck7r
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_2_trimmed/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileQMSEdZ
-gtf_to_sam -F /home/chris/transcriptome/fastq/assemble/Treat_3_trimmed/transcripts.gtf /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileCie2Tz
-sort -k 3,3 -k 4,4n --temporary-directory=/home/chris/transcriptome/fastq/merged/tmp/ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileMnabQb /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filegaWLpy /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_filePWH4vY /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileN3Ck7r /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileQMSEdZ /home/chris/transcriptome/fastq/merged/tmp/gtf2sam_fileCie2Tz > /home/chris/transcriptome/fastq/merged/tmp/mergeSam_filevlf97d
-cufflinks -o /home/chris/transcriptome/fastq/merged/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 1 /home/chris/transcriptome/fastq/merged/tmp/mergeSam_filevlf97d
-cuffcompare -o tmp_meta_asm -C -G  /home/chris/transcriptome/fastq/merged//transcripts.gtf
-cuffcompare -o tmp_meta_asm -C -G  /home/chris/transcriptome/fastq/merged//merged.gtf
+/home/chris/bin/cufflinks-2.2.1/cuffmerge -o /home/chris/transcriptome/fastq/merged /home/chris/transcriptome/fastq/assemble/gtf.txt
